@@ -1,0 +1,99 @@
+section {
+    background-color: #151D2E;
+    color: white;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+    
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.about-me-description {
+    padding: 64px 64px 64px 120px;
+    color: white;
+    width: 680px;
+    height: 740px;
+    left: 100px;
+    text-align: left;
+
+    h1 {
+        text-align: left;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+    }
+
+    p {
+        padding-top: 64px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+.about-me-small-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 35px;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+
+
+    img {
+        width: 48px;
+        height: 48px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.4);
+        }
+
+    }
+}
+
+
+.about-me-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative; 
+    padding-left: 166px; 
+    left: 134px;
+}
+
+.about-me-img1 {
+    position: absolute; 
+    top: 120px; 
+    left: 10px; 
+    width: 834px; 
+    height: auto; 
+    z-index: 1; 
+
+    img {
+        width: 634px;
+        
+    }
+}
+
+.about-me-img img:not(.about-me-img1) {
+    position: relative; 
+    z-index: 2; 
+    height: 737px; 
+    max-width: 593px; 
+}
