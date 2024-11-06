@@ -180,3 +180,15 @@
     margin-top: 27px;
   }
 }
+
+.green-shadow {
+  position: absolute;
+  left: -640px;
+  z-index: 1;
+}
+
+.blue-shadow {
+  position: absolute;
+  right: -360px;
+  z-index: 1;
+}
