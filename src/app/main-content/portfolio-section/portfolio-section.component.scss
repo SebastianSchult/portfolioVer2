@@ -1,0 +1,106 @@
+.portfolio-section {
+    padding-top: 600px;
+    background-color: #141d2f;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-content {
+    max-width: 1920px;
+    width: 100%;
+    z-index: 2;
+}
+
+.portfolio-headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    color: white;
+
+    h2{
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 108px;
+        padding: 1rem;
+        padding-left: 30px;
+    }
+
+    p {
+        width: 473px;
+        height: 38px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 100px;
+    }
+}
+
+.portfolio-line{
+    width: 68px;
+    height: 4px;
+    border-radius: 0 10px 10px 0;
+    background-color: #9747ff;
+}
+
+.project-content {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 33px;
+    padding-top: 100px;
+    z-index: 4;
+}
+
+.project-img{
+    width: 603px;
+    height: 603px;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #70e61c;
+    overflow: hidden;
+    background-color: #141d2f;
+    cursor: pointer;
+}
+
+.project-d-none {
+    display: none;
+    width: 603px;
+    height: 350px;
+    border-radius: 30px 30px 15px 15px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 254px;
+}
+
+.project-img:hover .project-d-none {
+    display: block;
+    transform: display 150ms ease-in-out;
+}
+
+.project-img:hover .project-btns {
+    visibility: visible;
+    transition: visibility 150ms ease-in-out;
+}
+
+.project-img img:hover  {
+    transition: opacity 150ms ease-in-out, transform 300ms ease-in-out ;
+    opacity: 0.5;
+    transform: scale(1.55) translateX(10px) translateY(-40px);
+}
+
+.project-img img {
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+
+
