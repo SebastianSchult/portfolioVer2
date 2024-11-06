@@ -3,11 +3,12 @@ import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { PortfolioSectionComponent } from "./portfolio-section/portfolio-section.component";
+import { ContactSectionComponent } from "./contact-section/contact-section.component";
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [LandingPageComponent, AboutMeComponent, SkillsComponent, PortfolioSectionComponent],
+  imports: [LandingPageComponent, AboutMeComponent, SkillsComponent, PortfolioSectionComponent, ContactSectionComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
