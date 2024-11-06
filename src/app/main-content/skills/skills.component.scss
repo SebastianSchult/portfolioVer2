@@ -1,0 +1,210 @@
+.skills-bg {
+    width: 1920px;
+    height: 800px;
+    left: 0px;
+    position: absolute;
+    overflow: visible;
+  }
+  
+  .img {
+    position: absolute;
+    height: 878.5px;
+    width: 1920px;
+    top: -285px;
+    z-index: 2; /* Bild liegt über der anderen Komponente */
+    clip-path: polygon(0 0, 66% 0, 66% 100%, 0 100%); /* Zeigt nur die ersten 66% des Bildes an */
+  }
+  
+  .img-below {
+    position: absolute;
+    height: 878.5px;
+    width: 1920px; /* Begrenzung auf das rechte Drittel */
+    top: -285px;
+    right: 0;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Zeigt das rechte Drittel an */
+  }
+  
+  #skills {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 80px;
+  }
+  
+  .skills-class {
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    padding-left: 100px;
+    height: 662px;
+
+  }
+  
+  .skills-claas-img {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt Umbrüche */
+    justify-content: flex-start;
+    align-items: center;
+    width: 864px; /* Container passt sich der verfügbaren Breite an */
+    height: 862px;
+    box-sizing: border-box;
+    
+  }
+  
+  .skill-item {
+    flex: 1 1 calc(25% - 20px); /* Nimmt 25% der Breite minus des Gaps ein */
+    max-width: 25%; /* Maximale Breite, um 4 Elemente in einer Zeile zu halten */
+    box-sizing: border-box; /* Inklusive Padding und Border in der Breitenberechnung */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    width: 88px;
+  }
+  
+  .skill-item img {
+    height: 80px;
+    z-index: 8;
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .skill-item img:hover {
+    cursor: pointer;
+    animation: moveUp 250ms ease-in-out forwards;
+  }
+
+  .skill-description {
+    padding-top: 20px;
+  }
+
+  
+
+  .skills-text-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 64px;
+    padding-top: 64px;
+    box-sizing: border-box;
+    z-index: 5;
+    align-items: center;
+    padding-left: 116px;
+    justify-content: center;
+
+    .skills-headline {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        hr {
+          width: 100%;
+          border: 4px solid #1CDAE6;
+          border-radius: 24px;
+        }
+  }
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: left;
+}
+
+h2 {
+  padding: 16px 0 16px 0;
+  font-weight: 700;
+  line-height: 38.4px;
+  font-size: 32px;
+}
+
+.skills-text-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  width: 100%;
+  left: 116px;
+
+  .btn-padding {
+    padding-top: 40px;
+  }
+
+  p {
+    max-width: 471px;
+  }
+
+  
+}
+
+.skillstext-dif-color {
+  color: #9747FF;
+}
+
+.continous {
+    max-width: 25%; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    padding-left: 100px;
+   
+}
+
+.continous:hover .skill-description {
+  opacity: 0;  
+  transition: opacity ;  
+}
+
+.continous img {
+  transition: transform 0.3s ease-in-out;
+  height: 80px;
+  z-index: 8;
+}
+
+.continous-img2 {
+  bottom: 150px;
+  height: 290px !important; 
+  width: auto;   
+  transition: transform 0.3s ease-in-out; 
+  position: relative;
+  object-fit: contain;
+  left: 60px;
+  cursor: pointer;
+}
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .btn {
+    text-decoration: none;
+    padding-top: 72px;
+    
+
+    .btn-trans {
+        transition: 220ms;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

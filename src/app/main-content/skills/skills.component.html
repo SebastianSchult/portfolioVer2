@@ -1,0 +1,49 @@
+<div class="skills-bg">
+    <img class="img" src="assets/img/background/28. Hero Background.png" alt="" />
+    <img
+      class="img img-below"
+      src="assets/img/background/28. Hero Background.png"
+      alt=""
+    />
+  </div>
+  <section id="skills">
+    <div class="skills-class">
+      <div class="skills-claas-img skill-item-fade-in">
+        <div *ngFor="let skill of skills" class="skill-item">
+          <img [src]="skill.src" alt="" />
+          <p class="skill-description">{{ skill.description }}</p>
+        </div>
+      </div>
+      <div class="continous"
+           (mouseenter)="onHoverContinous()"
+           (mouseleave)="onLeaveContinous()">
+        <img *ngIf="!isHoveringContinous" src="assets/img/skills/14. Icons.svg" alt="" />
+        <img *ngIf="isHoveringContinous" src="assets/img/skills/Property 1=Group 19.png" class="continous-img2" alt="" />
+        <p class="skill-description">Continually learning</p>
+      </div>
+    </div>
+  
+    <div class="skills-text-section">
+      <div class="skills-headline">
+      <h1>Skills</h1>
+      <hr />
+    </div>
+      <div class="skills-text-block">
+        <p>
+          My journey has involved working on differnent projects, employing a
+          range of frontend technologies and concepts. I am open to embracing new
+          technologies and methodologies to Countinously enhance my skills and
+          stay ahead in the ever-evolving landscape of web development.
+        </p>
+  
+        <h2>Looking for <span class="skillstext-dif-color">another Skill</span> ?</h2>
+        <p>
+          Feel free to contact me. I look forward to expanding on my previous
+          knowledge.
+        </p>
+        <a href="#contact" class="btn btn-ref btn-padding">
+          <button class="btn-primary btn-trans">Get in touch</button>
+        </a>
+      </div>
+    </div>
+  </section>
