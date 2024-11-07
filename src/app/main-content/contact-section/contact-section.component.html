@@ -1,1 +1,36 @@
-<p>contact-section works!</p>
+<div class="contact-section">
+  <div class="contact-content">
+    <div class="contact-headline">
+      <h2>Contact</h2>
+      <div class="contact-line"></div>
+    </div>
+    <div class="contact-d-flex">
+        <div class="contact-line-span"></div>
+        <div>
+            <div class="contact-text">
+                <span class="contact-text-headline">Got a problem to solve?</span>
+                <span class="contact-text-block">Contact me through this form. I am interested in hearing from you
+                    knowing your ideas and contributing to your projects with my work.
+                </span>
+                <span class="contact-text-end">Need a Frontend Developer? <b>Contact me!</b> </span>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form (ngSubmit)="onSubmit()">
+            <label for="name"></label>
+            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name...">
+
+            <label for="email"></label>
+            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email...">
+
+            <label for="message"></label>
+            <textarea [(ngModel)]="contactData.message" type="email" id="message" name="messagge" placeholder="Your message..."></textarea>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+    </div>
+
+  </div>
+</div>
