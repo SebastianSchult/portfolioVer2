@@ -1,36 +1,97 @@
-<div class="contact-section">
+<div class="contact-section" id="contact">
   <div class="contact-content">
     <div class="contact-headline">
       <h2>Contact</h2>
       <div class="contact-line"></div>
     </div>
     <div class="contact-d-flex">
-        <div class="contact-line-span"></div>
-        <div>
-            <div class="contact-text">
-                <span class="contact-text-headline">Got a problem to solve?</span>
-                <span class="contact-text-block">Contact me through this form. I am interested in hearing from you
-                    knowing your ideas and contributing to your projects with my work.
-                </span>
-                <span class="contact-text-end">Need a Frontend Developer? <b>Contact me!</b> </span>
-            </div>
+      <div class="contact-line-span"></div>
+      <div>
+        <div class="contact-text">
+          <span class="contact-text-headline">Got a problem to solve?</span>
+          <span class="contact-text-block"
+            >Contact me through this form. I am interested in hearing from you
+            knowing your ideas and contributing to your projects with my work.
+          </span>
+          <span class="contact-text-end"
+            >Need a Frontend Developer? <b>Contact me!</b>
+          </span>
         </div>
+      </div>
     </div>
     <div class="contact-form">
-        <form (ngSubmit)="onSubmit()">
-            <label for="name"></label>
-            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name...">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <label for="name"></label>
+        <input
+          #name="ngModel"
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name..."
+          required=""
+        />
+       
+        <span *ngIf="name?.invalid && name?.touched"
+        [ngClass]="{'error-text': name?.invalid && name?.touched}"> Please enter a name</span>
+        
 
-            <label for="email"></label>
-            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email...">
+        <label for="email"></label>
+        <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email..."
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+        <span  *ngIf="email?.invalid && email?.touched"
+        [ngClass]="{'error-text': email?.invalid && email?.touched}"> Please enter a valid email</span>
+        
 
-            <label for="message"></label>
-            <textarea [(ngModel)]="contactData.message" type="email" id="message" name="messagge" placeholder="Your message..."></textarea>
+        <label for="message"></label>
+        <textarea
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          type="email"
+          id="message"
+          name="message"
+          placeholder="Your message..."
+          required
+        ></textarea>
 
-            <input type="submit" value="Submit">
-            
-        </form>
+        <span [ngClass]="{'error-text': message?.invalid && message?.touched}">
+          Please enter a message</span
+        >
+
+        <div class="contact-form-btn-box">
+          <div class="privacy-policy">
+            <label class="contact-checkbox-container">
+              <input
+                [(ngModel)]="privacyPolicyChecked"
+                required
+                type="checkbox"
+                name="privacePolicy"
+              />
+              <span class="contact-privacy-checkmark"></span>
+            </label>
+            <span
+              >I´ve read the <a>privacy policy </a> and agree to the processing
+              of my data as outlined.</span
+            >
+          </div>
+          <button
+            [disabled]="!contactForm.valid || !privacyPolicyChecked"
+            ngClass="{valid: contactForm.valid && privacePolicyChecked, invalid: !myForm.valid || !privacePolicyChecked}"
+            type="submit"
+            value=""
+          >
+            Send message :)
+          </button>
+        </div>
+      </form>
     </div>
-
   </div>
 </div>

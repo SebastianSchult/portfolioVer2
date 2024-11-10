@@ -137,4 +137,129 @@ textarea:hover {
   border: 1px solid #1cdae6;
 }
 
+button[type="submit"] {
+  background-color: #b6b6b6;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Poppins";
+  width: 285px;
+  height: 58px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27px;
+}
 
+button.valid {
+    background-color: #70e61c;
+    color: white;
+    transition: background-color 100ms ease-in-out, width 100ms ease-in-out,
+      height 100ms ease-in-out;
+}
+
+
+button[type="submit"] .active:hover {
+  background-color: #9747ff;
+  width: 290px;
+  height: 68px;
+}
+
+.contact-form-btn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.privacy-policy {
+  display: flex;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 8px;
+  position: relative;
+  bottom: 30px;
+  text-wrap: nowrap;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #9747ff;
+    cursor: pointer;
+  }
+}
+.privacyPolicy a:hover {
+  text-decoration: underline;
+}
+
+.contact-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 13px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contact-checkbox-container input {
+  
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact-privacy-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 2px solid #70e61c;
+  border-radius: 5px;
+}
+
+.contact-checkbox-container input:checked ~ .contact-privacy-checkmark {
+    background-color: unset;
+}
+
+.contact-privacy-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.contact-checkbox-container input:checked ~ .contact-privacy-checkmark:after {
+    display: block;
+}
+
+.contact-checkbox-container .contact-privacy-checkmark:after {
+    left: 4px;
+    bottom: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid #70e61c;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.error-text {
+  color: #e61c40;
+  position: relative;
+  bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}

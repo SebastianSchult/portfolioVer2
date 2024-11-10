@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 
 @Component({
@@ -18,7 +18,15 @@ export class ContactSectionComponent {
     message: "",
   }
 
-onSubmit() {
-  console.log(this.contactData)
+onSubmit(ngForm: NgForm) {
+  if(ngForm.valid && ngForm.submitted) {
+    console.log(this.contactData)
+  }
+  
+}
+
+privacyPolicyChecked() {
+  
 }
 }
+
