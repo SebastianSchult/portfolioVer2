@@ -16,17 +16,15 @@ export class ContactSectionComponent {
     name: "",
     email: "",
     message: "",
-  }
+  };
 
-onSubmit(ngForm: NgForm) {
-  if(ngForm.valid && ngForm.submitted) {
-    console.log(this.contactData)
-  }
-  
-}
+  // Standardmäßig auf false gesetzt
+  privacyPolicyChecked: boolean = false;
 
-privacyPolicyChecked() {
-  
-}
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.contactData);
+    }
+  }
 }
 

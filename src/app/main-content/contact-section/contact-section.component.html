@@ -31,10 +31,13 @@
           placeholder="Your name..."
           required=""
         />
-       
-        <span *ngIf="name?.invalid && name?.touched"
-        [ngClass]="{'error-text': name?.invalid && name?.touched}"> Please enter a name</span>
-        
+
+        <span
+          *ngIf="name?.invalid && name?.touched"
+          [ngClass]="{ 'error-text': name?.invalid && name?.touched }"
+        >
+          Please enter a name</span
+        >
 
         <label for="email"></label>
         <input
@@ -47,9 +50,12 @@
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
-        <span  *ngIf="email?.invalid && email?.touched"
-        [ngClass]="{'error-text': email?.invalid && email?.touched}"> Please enter a valid email</span>
-        
+        <span
+          *ngIf="email?.invalid && email?.touched"
+          [ngClass]="{ 'error-text': email?.invalid && email?.touched }"
+        >
+          Please enter a valid email</span
+        >
 
         <label for="message"></label>
         <textarea
@@ -62,7 +68,9 @@
           required
         ></textarea>
 
-        <span [ngClass]="{'error-text': message?.invalid && message?.touched}">
+        <span
+          [ngClass]="{ 'error-text': message?.invalid && message?.touched }"
+        >
           Please enter a message</span
         >
 
@@ -83,13 +91,12 @@
             >
           </div>
           <button
-            [disabled]="!contactForm.valid || !privacyPolicyChecked"
-            ngClass="{valid: contactForm.valid && privacePolicyChecked, invalid: !myForm.valid || !privacePolicyChecked}"
-            type="submit"
-            value=""
-          >
-            Send message :)
-          </button>
+  [disabled]="!contactForm.valid || !privacyPolicyChecked"
+  [ngClass]="{ 'valid': contactForm.valid && privacyPolicyChecked, 'invalid': !contactForm.valid || !privacyPolicyChecked }"
+  type="submit"
+>
+  Send message :)
+</button>
         </div>
       </form>
     </div>
