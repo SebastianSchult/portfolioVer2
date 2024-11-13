@@ -23,6 +23,7 @@ footer {
 .footer-content-text {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   transform: translate(-50%, -50%);
   position: relative;
   left: 50%;
@@ -88,7 +89,7 @@ footer {
 .footer-copyright {
     align-items: center;
     justify-content: center;
-    margin-left: 622px;
+    
   font-size: 16px;
   color: white;
   font-weight: 400;
@@ -110,4 +111,14 @@ footer {
   color: #70e61c;
   position: absolute;
   clip-path: inset(0 0 0 50%);
+}
+
+.footer-social-link {
+    display: flex;
+  gap: 42px;
+margin-right: 50px;
+  & :hover {
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.1);
+  }
 }
