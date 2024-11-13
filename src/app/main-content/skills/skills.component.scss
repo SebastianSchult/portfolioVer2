@@ -1,5 +1,10 @@
+.skills-container {
+  max-width: 1980px; /* or your preferred max width */
+  margin: 0 auto; /* Centers the container */
+  position: relative;
+}
 .skills-bg {
-    width: 1920px;
+    width: 1980px;
     height: 800px;
     left: 0px;
     position: absolute;
@@ -9,7 +14,7 @@
   .img {
     position: absolute;
     height: 878.5px;
-    width: 1920px;
+    width: 1980px;
     top: -285px;
     z-index: 2; /* Bild liegt über der anderen Komponente */
     clip-path: polygon(0 0, 66% 0, 66% 100%, 0 100%); /* Zeigt nur die ersten 66% des Bildes an */
@@ -18,7 +23,7 @@
   .img-below {
     position: absolute;
     height: 878.5px;
-    width: 1920px; /* Begrenzung auf das rechte Drittel */
+    width: 1980px; /* Begrenzung auf das rechte Drittel */
     top: -285px;
     right: 0;
     z-index: 1;

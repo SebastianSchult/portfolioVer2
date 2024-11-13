@@ -1,0 +1,11 @@
+.container {
+    max-width: 1980px; // Setzt die maximale Breite auf 1440px
+    margin: 0 auto; // Zentriert den Inhalt bei größeren Bildschirmen
+  }
+
+  .nav-container {
+    position: sticky;
+    top: 0;
+    width: 100%; /* Passt sich der Container-Breite an */
+    z-index: 1000;
+  }
