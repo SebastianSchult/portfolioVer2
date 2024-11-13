@@ -1,20 +1,21 @@
 .skills-container {
-  max-width: 1980px; /* or your preferred max width */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1920px; 
+  margin: 0 auto; 
   position: relative;
 }
 .skills-bg {
-    width: 1980px;
+    width: 1920px;
     height: 800px;
     left: 0px;
     position: absolute;
     overflow: visible;
+    
   }
   
   .img {
     position: absolute;
     height: 878.5px;
-    width: 1980px;
+    width: 1920px;
     top: -285px;
     z-index: 2; /* Bild liegt über der anderen Komponente */
     clip-path: polygon(0 0, 66% 0, 66% 100%, 0 100%); /* Zeigt nur die ersten 66% des Bildes an */
@@ -49,19 +50,19 @@
   
   .skills-claas-img {
     display: flex;
-    flex-wrap: wrap; /* Erlaubt Umbrüche */
+    flex-wrap: wrap; 
     justify-content: flex-start;
     align-items: center;
-    width: 864px; /* Container passt sich der verfügbaren Breite an */
+    width: 864px; 
     height: 862px;
     box-sizing: border-box;
     
   }
   
   .skill-item {
-    flex: 1 1 calc(25% - 20px); /* Nimmt 25% der Breite minus des Gaps ein */
-    max-width: 25%; /* Maximale Breite, um 4 Elemente in einer Zeile zu halten */
-    box-sizing: border-box; /* Inklusive Padding und Border in der Breitenberechnung */
+    flex: 1 1 calc(25% - 20px); 
+    max-width: 25%; 
+    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
     align-items: center;
