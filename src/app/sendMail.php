@@ -30,8 +30,14 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $headers[] = "From: contact@sebastian-schult-dev.de";
 
             mail($recipient, $subject, $message, implode("\r\n", $headers));
+
+            // Send confirmation email to the user
+            $userSubject = "Thank you for reaching out!";
+            $userMessage = "Hello " . $name . ",<br><br>Thank you for contacting me. I have received your message and will respond as soon as possible.<br><br>Best regards,<br>Sebastian Schult";
+        
+            mail($email, $userSubject, $userMessage, implode("\r\n", $headers));
             break;
-        default: //Reject any non POST or OPTIONS requests.
+            default: //Reject any non POST or OPTIONS requests.
             header("Allow: POST", true, 405);
             exit;
     } 
