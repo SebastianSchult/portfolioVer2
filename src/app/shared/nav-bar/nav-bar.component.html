@@ -15,19 +15,33 @@
       <div class="lang-box">
         <img
           class="lang-img"
-          style="display: none;"
+          style="display: none"
           src=""
           alt="english"
           src="assets/img/language/flag_great_britain.png"
         />
         <img
           class="lang-img"
-          style="display: none;"
+          style="display: none"
           src=""
           alt="german"
           src="assets/img/language/flag_germany.webp"
         />
       </div>
     </div>
-  </div>
+
+    <div class="burgerMenuResponsive">
+        <div class="openBurger">
+          <img src="./assets/img/header/34. burger menu.png" (click)="openResponsiveMenu()" />
+        </div>
+      </div>
+    </div>
+      <div class="overlay" *ngIf="showResponsiveMenu">
+        <div class="burgerDiv">
+          <a href="#aboutMeText" (click)="closeResponsiveMenu()">About me</a>
+          <a href="#skills" (click)="closeResponsiveMenu()">Skills</a>
+          <a href="#portfolio" (click)="closeResponsiveMenu()">Portfolio</a>
+          <a href="#contact" (click)="closeResponsiveMenu()">Contact</a>
+        </div>
+      </div>
 </nav>
