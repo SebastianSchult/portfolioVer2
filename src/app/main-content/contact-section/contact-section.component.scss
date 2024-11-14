@@ -267,3 +267,37 @@ button[type="submit"] {
   animation-fill-mode: forwards;
   z-index: 10;
 }
+
+.contact-btn-up {
+  position: relative;
+  right: 0;
+  display: flex;
+  margin-top: 530px;
+}
+
+.contact-btn-up .defaultImg,
+.contact-btn-up .hoverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.contact-btn-up .defaultImg {
+  opacity: 1;
+  z-index: 1;
+}
+
+.contact-btn-up .hoverImg {
+  opacity: 0;
+  z-index: 2;
+}
+
+.contact-btn-up:hover .defaultImg {
+  opacity: 0;
+}
+
+.contact-btn-up:hover .hoverImg {
+  opacity: 1;
+}
