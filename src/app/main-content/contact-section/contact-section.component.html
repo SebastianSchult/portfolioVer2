@@ -91,12 +91,20 @@
             >
           </div>
           <button
-  [disabled]="!contactForm.valid || !privacyPolicyChecked"
-  [ngClass]="{ 'valid': contactForm.valid && privacyPolicyChecked, 'invalid': !contactForm.valid || !privacyPolicyChecked }"
-  type="submit" value="Submit"
->
-  Send message :)
-</button>
+            [disabled]="!contactForm.valid || !privacyPolicyChecked"
+            [ngClass]="{
+              valid: contactForm.valid && privacyPolicyChecked,
+              invalid: !contactForm.valid || !privacyPolicyChecked,
+              success: isButtonSuccess
+            }"
+            type="submit"
+          >
+            {{
+              isButtonSuccess
+                ? "message sent!"
+                : "Send message :)"
+            }}
+          </button>
         </div>
       </form>
     </div>

@@ -27,6 +27,7 @@ export class ContactSectionComponent {
   
 
   mailTest = false;
+  isButtonSuccess: boolean = false;
 
   post = {
     endPoint: 'https://sebastian-schult-dev.de/sendMail.php',
@@ -41,22 +42,21 @@ export class ContactSectionComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.isButtonSuccess = true;
+            setTimeout(() => {
+              this.isButtonSuccess = false;
+            }, 2000);
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
     }
-  }
 }
-
+}
