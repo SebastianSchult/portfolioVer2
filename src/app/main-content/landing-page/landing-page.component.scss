@@ -94,6 +94,12 @@ section {
   }
 }
 
+.btn-primary {
+  width: 165px;
+  height: 58px;
+  font-size: 23px;
+}
+
 .landingpage-bottom-section {
   padding-top: 216px;
   display: flex;
@@ -132,7 +138,6 @@ section {
 
 .text-right-side {
   display: none;
-  
 }
 
 @media screen and (max-width: 1050px) {
@@ -169,8 +174,12 @@ section {
     padding-right: 4%;
   }
 
-  .btn {
-    width: 133px;
+  
+ 
+  .btn-primary {
+    width: auto;
     height: 49px;
+    font-size: 16px;
   }
+ 
 }
