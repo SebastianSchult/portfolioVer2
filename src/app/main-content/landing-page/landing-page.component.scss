@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .titel-box {
+    padding-right: 40px;
+  }
+
   .rotate-title {
     margin-top: 20px;
     font-size: 40px;
@@ -157,13 +161,13 @@
     align-items: center;
 
     h1 {
-      font-size: 54px;
-      line-height: 0;
+      font-size: 45px;
+      line-height: 54px;
     }
 
     h2 {
-      font-size: 36px;
-      line-height: 80px;
+      font-size: 29px;
+      line-height: 34.8px;
     }
   }
 
