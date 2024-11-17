@@ -260,51 +260,118 @@ section {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .about-me-description {
+    left: -10px;
+    width: 400px;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+  .about-me-img1 {
+    padding-top: 0px;
+    scale: 1;
+  }
+
+  .about-me-img1 img {
+    scale: 1.4;
+  }
+
+  .about-me-img2 {
+    padding-top: 80px;
+    scale: 1.4;
+  }
+}
+
+
 
 @media screen and (max-width: 560px) {
   .aboutMe {
     width: 350px;
+    left: 30px;
     h1 {
       font-size: 45px;
     }
   }
 
-  .aboutMePhoto img:first-of-type {
-    transform: translate(-50%) scale(0.7);
-    left: 50%;
-    top: 35px;
+  .about-me-img {
+    top: -180px;
+    left: -36px;
   }
 
-  .aboutMePhoto img:last-of-type {
-    transform: translate(-50%) scale(0.8);
-    left: 50%;
-    width: 480px;
-    top: 35px;
+  .about-me-img1 {
+    padding-top: 0px;
+    scale: 0.8;
   }
+
+  .about-me-img2 {
+    padding-top: 80px;
+    scale: 1.2;
+  }
+
+
+  
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 470px) {
   .aboutMe {
     bottom: 400px;
+    width: 230px;
+  }
+
+  .about-me-description {
+    left: -10px;
+    width: 360px;
+  }
+
+  .about-me-img {
+    top: -180px;
+    left: -46px;
+  }
+
+  .about-me-img1 {
+    padding-top: 0px;
+    scale: 0.6;
+  }
+
+  .about-me-img2 {
+    padding-top: 80px;
+    scale: 1;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .aboutMe {
     width: 300px;
   }
 
-  .aboutMePhoto img:first-of-type {
-    transform: translate(-50%) scale(0.55);
-    left: 50%;
-    width: 580px;
-    top: 35px;
+  .about-me-img {
+    top: -300px;
+    left: -26px;
   }
 
-  .aboutMePhoto img:last-of-type {
-    width: 490px;
-    transform: translate(-50%) scale(0.65);
-    left: 50%;
-    top: 35px;
+  .about-me-description {
+    margin-top: -220px;
+    left: -10px;
+    padding: 4px;
+    width: 280px;
   }
+
+  .about-me-img1 {
+    scale: 0.45;
+  }
+
+  .about-me-img2 {
+    padding-top: 80px;
+    scale: 0.85;
+  }
+
 }
+
+
 
