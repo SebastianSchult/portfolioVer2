@@ -126,3 +126,9 @@ nav {
     display: none;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .nav-box {
+    padding: 8px !important;
+  }
+}
