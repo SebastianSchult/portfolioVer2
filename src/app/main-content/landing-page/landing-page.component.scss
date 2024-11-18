@@ -182,7 +182,36 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .titel-box {
+    width: 100%;
+  }
+
+  .titel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      font-size: 45px;
+      line-height: 54px;
+    
+    }
+
+    h2 {
+      font-size: 29px;
+      line-height: 24px
+    }
+  }
+
+  .rotate-title {
+    width: 84px;
+    height: 140px;
+    padding-top: 68px;
+  }
+}
+
+@media screen and (max-width: 400px) {
 
   .titel-box {
     display: flex;
@@ -196,7 +225,7 @@
   .rotate-title {
     margin: 0;
     padding: 0;
-    left: 12px;
+    left: 24px;
   }
 
   .titel {
@@ -222,7 +251,7 @@
     padding-top: 48px;
 
     span {
-      width: 32px;
+      width: 30px;
       height: 38.4px;
       rotate: -90deg;
     }
