@@ -181,3 +181,65 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  .titel-box {
+    display: flex;
+    gap: 10px;
+    padding-right: 0px;
+    padding-top: 300px;
+    padding-left: 12px;
+    width: 100%;
+  }
+
+  .rotate-title {
+    margin: 0;
+    padding: 0;
+    left: 12px;
+  }
+
+  .titel {
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      font-size: 45px;
+      line-height: 14px;
+    }
+
+    h2 {
+      font-size: 29px;
+      line-height: 24px
+    }
+  }
+
+  .rotate-title {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 28.4px;
+    justify-content: flex-start;
+    padding-top: 48px;
+
+    span {
+      width: 32px;
+      height: 38.4px;
+      rotate: -90deg;
+    }
+  }
+
+  .shadow-purple {
+    left: -120px;
+    top: 240px;
+    width: 373.79px;
+    height: 389.95px;
+    gap: 0px;
+  }
+  
+  .shadow-blue {
+    top: 2%;
+    right: -200px;
+    width: 380px;
+    height: 1100px;
+  }
+}
