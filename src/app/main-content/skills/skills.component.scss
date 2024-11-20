@@ -1,118 +1,123 @@
 .skills-container {
-  max-width: 1920px; 
-  margin: 0 auto; 
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
 }
 .skills-bg {
-    width: 1920px;
-    height: 800px;
-    left: 0px;
-    position: absolute;
-    overflow: visible;
-    
-  }
-  
-  .img {
-    position: absolute;
-    height: 878.5px;
-    width: 1920px;
-    top: -285px;
-    z-index: 2; /* Bild liegt über der anderen Komponente */
-    clip-path: polygon(0 0, 66% 0, 66% 100%, 0 100%); /* Zeigt nur die ersten 66% des Bildes an */
-  }
-  
-  .img-below {
-    position: absolute;
-    height: 878.5px;
-    width: 1980px; /* Begrenzung auf das rechte Drittel */
-    top: -285px;
-    right: 0;
-    z-index: 1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Zeigt das rechte Drittel an */
-  }
-  
-  #skills {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    box-sizing: border-box;
-    padding-top: 80px;
-  }
-  
-  .skills-class {
-    display: flex;
-    flex-direction: column;
-    z-index: 4;
-    padding-left: 100px;
-    height: 662px;
+  width: 1920px;
+  height: 800px;
+  left: 0px;
+  position: absolute;
+  overflow: visible;
+}
 
-  }
-  
-  .skills-claas-img {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-start;
-    align-items: center;
-    width: 864px; 
-    height: 862px;
-    box-sizing: border-box;
-    
-  }
-  
-  .skill-item {
-    flex: 1 1 calc(25% - 20px); 
-    max-width: 25%; 
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 80px;
-    width: 88px;
-  }
-  
-  .skill-item img {
-    height: 80px;
-    z-index: 8;
-    transition: transform 250ms ease-in-out;
-  }
-  
-  .skill-item img:hover {
-    cursor: pointer;
-    animation: moveUp 250ms ease-in-out forwards;
-  }
+.img {
+  position: absolute;
+  height: 878.5px;
+  width: 1920px;
+  top: -285px;
+  z-index: 2; /* Bild liegt über der anderen Komponente */
+  clip-path: polygon(
+    0 0,
+    66% 0,
+    66% 100%,
+    0 100%
+  ); /* Zeigt nur die ersten 66% des Bildes an */
+}
 
-  .skill-description {
-    padding-top: 20px;
-  }
+.img-below {
+  position: absolute;
+  height: 878.5px;
+  width: 1980px; /* Begrenzung auf das rechte Drittel */
+  top: -285px;
+  right: 0;
+  z-index: 1;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  ); /* Zeigt das rechte Drittel an */
+}
 
-  
+#skills {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
 
-  .skills-text-section {
-    display: flex;
-    flex-direction: column;
+.skills-class {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  padding-left: 100px;
+  height: 662px;
+}
+
+.skills-claas-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 864px;
+  height: 862px;
+  box-sizing: border-box;
+}
+
+.skill-item {
+  flex: 1 1 calc(25% - 20px);
+  max-width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px;
+  width: 88px;
+}
+
+.skill-item img {
+  height: 80px;
+  z-index: 8;
+  transition: transform 250ms ease-in-out;
+}
+
+.skill-item img:hover {
+  cursor: pointer;
+  animation: moveUp 250ms ease-in-out forwards;
+}
+
+.skill-description {
+  padding-top: 20px;
+}
+
+.skills-text-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 64px;
+  padding-top: 64px;
+  box-sizing: border-box;
+  z-index: 5;
+  align-items: center;
+  padding-left: 116px;
+  justify-content: center;
+
+  .skills-headline {
+    position: relative;
     width: 100%;
-    top: 64px;
-    padding-top: 64px;
-    box-sizing: border-box;
-    z-index: 5;
-    align-items: center;
-    padding-left: 116px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 32px;
 
-    .skills-headline {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 32px;
-
-        hr {
-          width: 100%;
-          border: 4px solid #1CDAE6;
-          border-radius: 24px;
-        }
+    hr {
+      width: 100%;
+      border: 4px solid #1cdae6;
+      border-radius: 24px;
+    }
   }
 }
 
@@ -151,29 +156,26 @@ h2 {
   p {
     max-width: 471px;
   }
-
-  
 }
 
 .skillstext-dif-color {
-  color: #9747FF;
+  color: #9747ff;
 }
 
 .continous {
-    max-width: 25%; 
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 80px;
-    padding-left: 100px;
-   
+  max-width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px;
+  padding-left: 100px;
 }
 
 .continous:hover .skill-description {
-  opacity: 0;  
-  transition: opacity ;  
+  opacity: 0;
+  transition: opacity;
 }
 
 .continous img {
@@ -184,37 +186,36 @@ h2 {
 
 .continous-img2 {
   bottom: 150px;
-  height: 290px !important; 
-  width: auto;   
-  transition: transform 0.3s ease-in-out; 
+  height: 290px !important;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
   position: relative;
   object-fit: contain;
   left: 60px;
   cursor: pointer;
 }
-  
-  @keyframes moveUp {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.btn {
+  text-decoration: none;
+  padding-top: 72px;
+
+  .btn-trans {
+    transition: 220ms;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
-
-  .btn {
-    text-decoration: none;
-    padding-top: 72px;
-    
-
-    .btn-trans {
-        transition: 220ms;
-        transform: scale(1);
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
 }
 
 @media screen and (max-width: 1700px) {
@@ -235,8 +236,8 @@ h2 {
   }
 
   .skill-item {
-    flex: 1 1 calc(33.33% - 20px); /* Maximal drei Bilder nebeneinander */
-    max-width: calc(33.33% - 20px); /* Breite auf ein Drittel begrenzen */
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
     padding: 40px;
   }
 
@@ -246,7 +247,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1399px){
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .skills-bg {
     z-index: 1;
     top: -68px;
@@ -267,8 +268,8 @@ h2 {
   }
 
   .skill-item {
-    flex: 1 1 calc(50% - 20px); /* Maximal zwei Bilder nebeneinander */
-    max-width: calc(50% - 20px); /* Breite auf 50% des Containers begrenzen */
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
     padding: 20px;
   }
 
@@ -281,16 +282,16 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .skills-bg {
     z-index: 1;
-    top: -1040px;
+    top: -80px;
   }
   #skills {
     flex-direction: column;
   }
-  
+
   .skill-item {
-    flex: 1 1 calc(33.33% - 15px); /* Maximal drei Elemente nebeneinander */
-    max-width: calc(33.33% - 15px); /* Breite auf ein Drittel des Containers begrenzen */
-    padding: 15px; /* Abstände anpassen */
+    flex: 1 1 calc(33.33% - 15px);
+    max-width: calc(33.33% - 15px);
+    padding: 15px;
   }
 
   .skills-claas-img {
@@ -319,10 +320,59 @@ h2 {
 
     .btn {
       justify-content: center;
-  
-  
     }
   }
+}
 
-  
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #skills {
+    flex-direction: column;
+  }
+  .skills-bg {
+    z-index: 1;
+    top: -1090px;
+  }
+
+  .skills-claas-img .skill-item {
+    flex: 1 1 calc(50% - 20px); /* Zwei Spalten */
+    max-width: calc(
+      50% - 20px
+    ); /* Begrenze die Breite auf 50% minus den Abstand */
+    padding: 10px; /* Optional: Abstände anpassen */
+  }
+
+  .skills-claas-img {
+    width: 500px;
+  }
+
+  .continous {
+    padding-top: 40px;
+    padding-left: 120px;
+  }
+
+  .skills-class {
+    padding-left: 20px;
+  }
+
+  .skills-text-section {
+    padding-top: 60px;
+    padding-left: 0px;
+    align-items: normal;
+   
+  }
+
+  .skills-text-section .skills-headline {
+    top: -940px;
+  }
+
+  .skills-text-block {
+    width: 458px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 34px;
+
+    .btn {
+      justify-content: center;
+    }
+  }
 }
