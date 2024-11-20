@@ -137,7 +137,6 @@
 }
 
 @media screen and (max-width: 1475px) {
-  
   .titel {
     display: flex;
     flex-direction: column;
@@ -182,7 +181,6 @@
   .titel {
     h1 {
       font-size: 80px;
-
     }
 
     h2 {
@@ -197,8 +195,6 @@
   }
 
   .rotate-title {
-    
-
     span {
       font-size: 40px;
       font-weight: 200;
@@ -250,8 +246,6 @@
 
 @media screen and (max-width: 700px) {
   .rotate-title {
-    
-
     span {
       font-size: 28px;
       line-height: 38px;
@@ -278,8 +272,6 @@
   }
 
   .titel {
-    
-
     h1 {
       font-size: 38px;
       line-height: 38px;
@@ -292,14 +284,12 @@
   }
 
   .rotate-title {
-    .titel-box{
+    .titel-box {
       span {
         font-size: 32px;
         line-height: 38px;
       }
     }
-
-    
   }
 
   .shadow-purple {
@@ -329,8 +319,6 @@
   }
 
   .rotate-title {
-    
-    
   }
 
   .titel {
@@ -349,12 +337,9 @@
   }
 
   .rotate-title {
-    
-
     span {
       line-height: 27.4px;
       font-size: 20px;
-      
     }
   }
 
@@ -384,13 +369,8 @@
     width: 100%;
   }
 
-  .rotate-title {
-    
-    
-  }
-
   .titel {
-
+    
     h1 {
       font-size: 23px;
       line-height: 22px;
