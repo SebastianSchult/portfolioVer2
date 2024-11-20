@@ -279,7 +279,10 @@ h2 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
+  .skills-bg {
+    z-index: 1;
+    top: -1040px;
+  }
   #skills {
     flex-direction: column;
   }
