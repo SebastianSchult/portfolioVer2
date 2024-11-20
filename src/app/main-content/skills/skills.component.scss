@@ -133,6 +133,8 @@ h2 {
 .skills-text-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 16px;
@@ -276,6 +278,48 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  #skills {
+    flex-direction: column;
+  }
+  
+  .skill-item {
+    flex: 1 1 calc(33.33% - 15px); /* Maximal drei Elemente nebeneinander */
+    max-width: calc(33.33% - 15px); /* Breite auf ein Drittel des Containers begrenzen */
+    padding: 15px; /* Abstände anpassen */
+  }
+
+  .skills-claas-img {
+    width: 770px;
+  }
+
+  .continous {
+    padding-top: 40px;
+    padding-left: 120px;
+  }
+
+  .skills-class {
+    padding-left: 30px;
+  }
+
+  .skills-text-section {
+    padding-top: 120px;
+    padding-left: 100px;
+    align-items: normal;
+  }
+
+  .skills-text-block {
+    width: 542px;
+    text-align: center;
+    justify-content: center;
+
+    .btn {
+      justify-content: center;
+  
+  
+    }
+  }
+
   
 }
