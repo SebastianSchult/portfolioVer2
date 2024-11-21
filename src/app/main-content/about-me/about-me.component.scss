@@ -186,14 +186,15 @@ section {
 
 @media screen and (max-width: 1023px) {
   .about-me-description {
-    margin-top: 35px;
     z-index: 1;
     width: 340px;
     h1 {
       padding: 1rem 0rem;
       font-size: 50px;
+      margin: 0;
     }
     p {
+      font-size: 14px;
       padding: 1rem 0rem;
     }
   }
@@ -232,7 +233,7 @@ section {
     }
 
     p {
-      font-size: 24px;
+      font-size: 14px;
       line-height: 32.2px;
     }
   }
@@ -330,6 +331,7 @@ section {
   .aboutMe {
     bottom: 400px;
     width: 230px;
+    padding-left: 4px;
   }
 
   .about-me-description {
