@@ -324,6 +324,13 @@ h2 {
   }
 }
 
+@media screen and (max-width: 899px){
+  .skills-bg {
+    z-index: 1;
+    top: -1014px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   #skills {
     flex-direction: column;
