@@ -193,37 +193,85 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 1310px){
+@media screen and (max-width: 1310px) {
   .project-content {
     flex-direction: column;
-  align-items: center;
- height: auto;
- padding-top: 33px;
- margin-top: 0;
+    align-items: center;
+    height: auto;
+    padding-top: 33px;
+    margin-top: 0;
   }
-  
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1399px){
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .portfolio-section {
     padding-top: 380px;
   }
 
   .project-content {
     padding: 32px;
-}
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .portfolio-section {
     padding-top: 20px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .project-img {
+    width: 340px;
+    height: 339.43px;
 
+    img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover; 
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+  }
+  .project-btns {
+    padding-left: 15px;
+    padding-top: 34px;
+    gap: 20px;
+  }
+
+  .project-d-none {
+    border-radius: 10px; /* Kleinere Abrundung */
+    padding: 10px; /* Weniger Innenabstand für mehr Platz */
+    font-size: 14px; /* Schriftgröße reduzieren */
+    bottom: 245px; /* Positionierung näher an der unteren Grenze */
+    left: 50%; /* Horizontal zentriert */
+    transform: translateX(-50%); /* Zentrierung sicherstellen */
+    position: relative;
+    top: auto;
+
+    .project-d-flex {
+      margin-top: -50px;
+
+      h3 {
+        font-size: 18px; /* Reduzierte Größe der Überschrift */
+        margin-bottom: 10px;
+      }
+
+      div {
+        font-size: 12px; /* Kleinere Schrift für Textinhalt */
+        line-height: 1.4;
+      }
+
+      p {
+        font-size: 12px; /* Schriftgröße für Technologie-Tag */
+      }
+    }
+  }
+  .project-d-none .project-d-flex div {
+    font-size: 12px;
+    line-height: 1;
+    width: 240px;
+   
+  }
 }
 
 @media screen and (max-width: 480px) {
-
 }
