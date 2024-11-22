@@ -310,7 +310,7 @@ h2 {
   .skills-text-section {
     padding-top: 120px;
     padding-left: 100px;
-    align-items: normal;
+    align-items: center;
   }
 
   .skills-text-block {
@@ -356,17 +356,19 @@ h2 {
 
   .continous {
     padding-top: 40px;
-    padding-left: 120px;
+    align-items: center; 
+    padding-left: 0;
   }
 
   .skills-class {
     padding-left: 20px;
+    align-items: center; 
   }
 
   .skills-text-section {
     padding-top: 60px;
     padding-left: 0px;
-    align-items: normal;
+    align-items: center; 
   }
 
   .skills-text-section .skills-headline {
@@ -417,7 +419,7 @@ h2 {
 
   .skills-class {
     padding-top: 0;
-    padding-left: 15%;
+    padding-left: 10%;
   }
 
   .skills-text-section .skills-headline {
@@ -433,6 +435,7 @@ h2 {
     padding-left: 13px;
     padding-right: 13px;
     text-align: center;
+    padding-top: 0;
 
     h2 {
       font-size: 30px;

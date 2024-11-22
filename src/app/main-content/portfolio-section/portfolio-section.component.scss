@@ -193,8 +193,37 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 1310px){
+  .project-content {
+    flex-direction: column;
+  align-items: center;
+ height: auto;
+ padding-top: 33px;
+ margin-top: 0;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px){
+  .portfolio-section {
+    padding-top: 380px;
+  }
+
+  .project-content {
+    padding: 32px;
+}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .portfolio-section {
     padding-top: 20px;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
