@@ -229,8 +229,8 @@
 
     img {
       width: 100%;
-      height: 100%; 
-      object-fit: cover; 
+      height: 100%;
+      object-fit: cover;
       transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     }
   }
@@ -238,15 +238,17 @@
     padding-left: 15px;
     padding-top: 34px;
     gap: 20px;
+    height: auto;
+    width: auto;
   }
 
   .project-d-none {
-    border-radius: 10px; 
-    padding: 10px; 
-    font-size: 14px; 
-    bottom: 245px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
     top: auto;
 
@@ -254,17 +256,17 @@
       margin-top: -50px;
 
       h3 {
-        font-size: 18px; 
+        font-size: 18px;
         margin-bottom: 10px;
       }
 
       div {
-        font-size: 12px; 
+        font-size: 12px;
         line-height: 1.4;
       }
 
       p {
-        font-size: 12px; 
+        font-size: 12px;
       }
     }
   }
@@ -272,7 +274,6 @@
     font-size: 12px;
     line-height: 1;
     width: 240px;
-   
   }
 }
 
@@ -280,14 +281,22 @@
   .portfolio-section {
     padding-top: 20px;
   }
+
+  .portfolio-header {
+    h2 {
+      font-size: 48px;
+    }
+  }
   .project-img {
-    width: 340px;
-    height: 339.43px;
+    width: 280px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
 
     img {
-      width: 100%;
-      height: 100%; 
-      object-fit: cover; 
+      width: auto;
+      height: 95%;
+      object-fit: cover;
       transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     }
   }
@@ -298,12 +307,12 @@
   }
 
   .project-d-none {
-    border-radius: 10px; 
-    padding: 10px; 
-    font-size: 14px; 
-    bottom: 245px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
     top: auto;
 
@@ -311,17 +320,17 @@
       margin-top: -50px;
 
       h3 {
-        font-size: 18px; 
+        font-size: 18px;
         margin-bottom: 10px;
       }
 
       div {
-        font-size: 12px; 
+        font-size: 12px;
         line-height: 1.4;
       }
 
       p {
-        font-size: 12px; /* Schriftgröße für Technologie-Tag */
+        font-size: 12px;
       }
     }
   }
@@ -329,6 +338,45 @@
     font-size: 12px;
     line-height: 1;
     width: 240px;
-   
+  }
+
+  .portfolio-header {
+    p {
+      padding-left: 30px;
+      width: auto;
+    }
+  }
+
+  .project-btns {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px; 
+    position: absolute; 
+    width: 70%;
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    a {
+      font-size: 14px; 
+      padding: 8px 15px; 
+      border-radius: 5px; 
+    }
+  }
+
+  .project-btn-git a,
+  .project-btn-live a {
+    width: auto; 
+    text-align: center; 
+    background-color: #1cdae6; 
+    color: white; 
+    border: none; 
+  }
+
+  .project-btn-git a:hover,
+  .project-btn-live a:hover {
+    background-color: #70e61c; 
   }
 }
