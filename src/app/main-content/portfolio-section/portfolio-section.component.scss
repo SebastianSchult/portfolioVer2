@@ -220,6 +220,9 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .portfolio-section {
+    padding-top: 20px;
+  }
   .project-img {
     width: 340px;
     height: 339.43px;
@@ -238,12 +241,12 @@
   }
 
   .project-d-none {
-    border-radius: 10px; /* Kleinere Abrundung */
-    padding: 10px; /* Weniger Innenabstand für mehr Platz */
-    font-size: 14px; /* Schriftgröße reduzieren */
-    bottom: 245px; /* Positionierung näher an der unteren Grenze */
-    left: 50%; /* Horizontal zentriert */
-    transform: translateX(-50%); /* Zentrierung sicherstellen */
+    border-radius: 10px; 
+    padding: 10px; 
+    font-size: 14px; 
+    bottom: 245px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     position: relative;
     top: auto;
 
@@ -251,12 +254,69 @@
       margin-top: -50px;
 
       h3 {
-        font-size: 18px; /* Reduzierte Größe der Überschrift */
+        font-size: 18px; 
         margin-bottom: 10px;
       }
 
       div {
-        font-size: 12px; /* Kleinere Schrift für Textinhalt */
+        font-size: 12px; 
+        line-height: 1.4;
+      }
+
+      p {
+        font-size: 12px; 
+      }
+    }
+  }
+  .project-d-none .project-d-flex div {
+    font-size: 12px;
+    line-height: 1;
+    width: 240px;
+   
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-section {
+    padding-top: 20px;
+  }
+  .project-img {
+    width: 340px;
+    height: 339.43px;
+
+    img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover; 
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+  }
+  .project-btns {
+    padding-left: 15px;
+    padding-top: 34px;
+    gap: 20px;
+  }
+
+  .project-d-none {
+    border-radius: 10px; 
+    padding: 10px; 
+    font-size: 14px; 
+    bottom: 245px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    position: relative;
+    top: auto;
+
+    .project-d-flex {
+      margin-top: -50px;
+
+      h3 {
+        font-size: 18px; 
+        margin-bottom: 10px;
+      }
+
+      div {
+        font-size: 12px; 
         line-height: 1.4;
       }
 
@@ -271,7 +331,4 @@
     width: 240px;
    
   }
-}
-
-@media screen and (max-width: 480px) {
 }
