@@ -302,6 +302,12 @@ button[type="submit"] {
   opacity: 1;
 }
 
+@media screen and (max-width: 1200px){
+  .contact-d-flex {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 767px){
   .contact-headline {
     gap: 16px;
@@ -321,6 +327,7 @@ button[type="submit"] {
 
   .contact-text-headline {
     font-size: 32px;
+    padding-left: 60px
   }
 
   .contact-text-block {
@@ -335,6 +342,7 @@ button[type="submit"] {
 
   .contact-line-span {
     left: -2px;
+    position: unset;
   }
 
   .contact-text {
@@ -406,12 +414,12 @@ button[type="submit"] {
   }
 
   .contact-line-span {
-    left: -32px;
+    left: -48px;
+    width: 40px;
   }
 
   .contact-text {
     max-width: 240px;
-    margin-left: -24px;
     
     }
 
