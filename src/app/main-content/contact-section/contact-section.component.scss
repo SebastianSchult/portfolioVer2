@@ -302,7 +302,80 @@ button[type="submit"] {
   opacity: 1;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px){
+  .contact-headline {
+    gap: 16px;
+    width: auto;
+
+    h2 {
+      font-size: 45px;
+      transform: none;
+      gap: 16px;
+    }
+  }
+
+  .contact-d-flex {
+    width: 100%;
+  }
+
+  .contact-text-headline {
+    font-size: 32px;
+  }
+
+  .contact-text-block {
+    max-width: 470px;
+      font-size: 16px;
+    
+  }
+  .contact-line {
+    width: 85px;
+    margin: 0;
+  }
+
+  .contact-line-span {
+    left: -2px;
+  }
+
+  .contact-text {
+    max-width: 460px;
+    margin-left: 0;
+    padding-left: 8px;
+
+    }
+
+    .contact-text-end {
+      font-size: 16px;
+    }
+
+    .contact-form {
+      max-width: 460px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    form {
+      max-width: 460px;
+    }
+
+    .privacy-policy {
+      max-width: 460px;
+      text-wrap: wrap;
+    }
+  
+    button[type="submit"] {
+      width: 240px; 
+      font-size: 16px;
+    }
+
+    .contact-btn-up {
+      margin-top: 500px;
+      right: 32px;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
   .contact-headline {
     gap: 16px;
     width: auto;
@@ -345,6 +418,9 @@ button[type="submit"] {
 
     .contact-form {
       max-width: 280px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
     }
 
     form {
