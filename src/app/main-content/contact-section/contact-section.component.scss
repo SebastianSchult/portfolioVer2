@@ -301,3 +301,22 @@ button[type="submit"] {
 .contact-btn-up:hover .hoverImg {
   opacity: 1;
 }
+
+@media screen and (max-width: 400px) {
+  .contact-headline {
+    gap: 16px;
+    width: auto;
+    
+    h2 {
+    font-size: 45px;  
+    transform: none; 
+    gap: 16px;
+    }
+  }
+
+  .contact-line {
+    width: 85px;
+    margin: 0;
+  }
+  }
+
