@@ -302,9 +302,20 @@ button[type="submit"] {
   opacity: 1;
 }
 
+.purple-shadow{
+  position: absolute;
+  bottom: -380px;
+  left: 740px;
+  z-index: -1;
+  
+}
+
 @media screen and (max-width: 1200px){
   .contact-d-flex {
     flex-direction: column;
+  }
+  .purple-shadow{
+
   }
 }
 
@@ -319,6 +330,10 @@ button[type="submit"] {
       transform: none;
       gap: 16px;
     }
+  }
+  .purple-shadow{
+    bottom: -580px;;
+    left: 400px;
   }
 
   .contact-d-flex {
