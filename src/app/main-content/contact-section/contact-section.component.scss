@@ -342,4 +342,30 @@ button[type="submit"] {
     .contact-text-end {
       font-size: 14px
     }
+
+    .contact-form {
+      max-width: 280px;
+    }
+
+    form {
+      max-width: 280px;
+    }
+
+    .privacy-policy {
+      max-width: 280px;
+      text-wrap: wrap;
+    }
+  
+    button[type="submit"] {
+      width: 195px; 
+      font-size: 14px;
+    }
+
+    .contact-btn-up {
+      margin-top: 560px;
+      right: 36px;
+    }
+
+    
+    
 }
