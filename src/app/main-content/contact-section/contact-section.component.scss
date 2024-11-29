@@ -305,7 +305,7 @@ button[type="submit"] {
 .purple-shadow{
   position: absolute;
   bottom: -380px;
-  left: 740px;
+  left: 60%;
   z-index: -1;
   
 }
@@ -313,9 +313,6 @@ button[type="submit"] {
 @media screen and (max-width: 1200px){
   .contact-d-flex {
     flex-direction: column;
-  }
-  .purple-shadow{
-
   }
 }
 
@@ -333,7 +330,7 @@ button[type="submit"] {
   }
   .purple-shadow{
     bottom: -580px;;
-    left: 200px;
+    left: 50%;
   }
 
   .contact-d-flex {
@@ -415,7 +412,7 @@ button[type="submit"] {
 
   .purple-shadow{
     bottom: -530px;;
-    left: 100px;
+    left: 60%;
   }
 
   .contact-text-headline {
