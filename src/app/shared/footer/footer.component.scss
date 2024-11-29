@@ -54,11 +54,12 @@ footer {
 .dot::after {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 2px;
   left: 1.45px;
   background-color: #8a2be2;
   height: 9px;
   width: 9px;
+  border-radius: 50%;
 }
 
 .footer-text {
