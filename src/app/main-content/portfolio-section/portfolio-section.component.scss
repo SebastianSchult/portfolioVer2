@@ -349,34 +349,34 @@
 
   .project-btns {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-around; 
-    align-items: center; 
-    gap: 10px; 
-    padding: 10px; 
-    position: absolute; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
     width: 70%;
-    left: 50%; 
-    transform: translateX(-50%); 
+    left: 50%;
+    transform: translateX(-50%);
 
     a {
-      font-size: 14px; 
-      padding: 8px 15px; 
-      border-radius: 5px; 
+      font-size: 14px;
+      padding: 8px 15px;
+      border-radius: 5px;
     }
   }
 
   .project-btn-git a,
   .project-btn-live a {
-    width: auto; 
-    text-align: center; 
-    background-color: #1cdae6; 
-    color: white; 
-    border: none; 
+    width: auto;
+    text-align: center;
+    background-color: #1cdae6;
+    color: white;
+    border: none;
   }
 
   .project-btn-git a:hover,
   .project-btn-live a:hover {
-    background-color: #70e61c; 
+    background-color: #70e61c;
   }
 }

@@ -302,21 +302,20 @@ button[type="submit"] {
   opacity: 1;
 }
 
-.purple-shadow{
+.purple-shadow {
   position: absolute;
   bottom: -380px;
   left: 60%;
-  z-index: -1;
-  
+  z-index: 1;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .contact-d-flex {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .contact-headline {
     gap: 16px;
     width: auto;
@@ -328,8 +327,8 @@ button[type="submit"] {
       gap: 16px;
     }
   }
-  .purple-shadow{
-    bottom: -580px;;
+  .purple-shadow {
+    bottom: -580px;
     left: 50%;
   }
 
@@ -339,13 +338,12 @@ button[type="submit"] {
 
   .contact-text-headline {
     font-size: 32px;
-    padding-left: 60px
+    padding-left: 60px;
   }
 
   .contact-text-block {
     max-width: 470px;
-      font-size: 16px;
-    
+    font-size: 16px;
   }
   .contact-line {
     width: 85px;
@@ -361,41 +359,38 @@ button[type="submit"] {
     max-width: 460px;
     margin-left: 0;
     padding-left: 8px;
+  }
 
-    }
+  .contact-text-end {
+    font-size: 16px;
+  }
 
-    .contact-text-end {
-      font-size: 16px;
-    }
+  .contact-form {
+    max-width: 460px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    bottom: 16px;
+  }
 
-    .contact-form {
-      max-width: 460px;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-      bottom: 16px;
-    }
+  form {
+    max-width: 460px;
+  }
 
-    form {
-      max-width: 460px;
-      
-    }
+  .privacy-policy {
+    max-width: 460px;
+    text-wrap: wrap;
+  }
 
-    .privacy-policy {
-      max-width: 460px;
-      text-wrap: wrap;
-    }
-  
-    button[type="submit"] {
-      width: 240px; 
-      font-size: 16px;
-    }
+  button[type="submit"] {
+    width: 240px;
+    font-size: 16px;
+  }
 
-    .contact-btn-up {
-      margin-top: 500px;
-      right: 32px;
-    }
-
+  .contact-btn-up {
+    margin-top: 500px;
+    right: 32px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -410,8 +405,8 @@ button[type="submit"] {
     }
   }
 
-  .purple-shadow{
-    bottom: -530px;;
+  .purple-shadow {
+    bottom: -530px;
     left: 60%;
   }
 
@@ -421,8 +416,7 @@ button[type="submit"] {
 
   .contact-text-block {
     max-width: 240px;
-      font-size: 14px;
-    
+    font-size: 14px;
   }
 
   .contact-line {
@@ -437,40 +431,35 @@ button[type="submit"] {
 
   .contact-text {
     max-width: 240px;
-    
-    }
+  }
 
-    .contact-text-end {
-      font-size: 14px
-    }
+  .contact-text-end {
+    font-size: 14px;
+  }
 
-    .contact-form {
-      max-width: 280px;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-    }
+  .contact-form {
+    max-width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 
-    form {
-      max-width: 280px;
-      
-    }
+  form {
+    max-width: 280px;
+  }
 
-    .privacy-policy {
-      max-width: 280px;
-      text-wrap: wrap;
-    }
-  
-    button[type="submit"] {
-      width: 195px; 
-      font-size: 14px;
-    }
+  .privacy-policy {
+    max-width: 280px;
+    text-wrap: wrap;
+  }
 
-    .contact-btn-up {
-      margin-top: 560px;
-      right: 36px;
-    }
+  button[type="submit"] {
+    width: 195px;
+    font-size: 14px;
+  }
 
-    
-    
+  .contact-btn-up {
+    margin-top: 560px;
+    right: 36px;
+  }
 }

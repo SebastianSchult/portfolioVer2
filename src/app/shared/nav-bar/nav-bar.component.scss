@@ -100,12 +100,12 @@ nav {
   }
 }
 
-.burgerMenuResponsive {
+.burger-menu-responsive {
   display: none;
 }
 
 @media screen and (max-width: 900px) {
-  .burgerMenuResponsive {
+  .burger-menu-responsive {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -116,6 +116,43 @@ nav {
     cursor: pointer;
     z-index: 99999;
   }
+
+  .overlay {
+    .burger-con {
+      height: 500px;
+      
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  .burger-con {
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    a {
+    color: white;
+    text-decoration: none;
+    transition: color 100ms ease-in-out;
+    cursor: pointer;
+    text-wrap: nowrap;
+    }
+    & a:hover {
+      color: #70e61c;
+      text-decoration: underline;
+      text-decoration-color: #9747ff;
+      text-decoration-thickness: 3px;
+    }
+  }
+  
 
   .navbar-link {
     
