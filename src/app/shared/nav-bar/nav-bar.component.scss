@@ -105,6 +105,10 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
+  nav {
+    position: fixed;
+  }
+
   .burger-menu-responsive {
     display: flex;
     justify-content: flex-end;
@@ -120,7 +124,7 @@ nav {
   .overlay {
     .burger-con {
       height: 500px;
-      
+
       justify-content: center;
       align-items: center;
     }
@@ -139,11 +143,11 @@ nav {
       gap: 50px;
     }
     a {
-    color: white;
-    text-decoration: none;
-    transition: color 100ms ease-in-out;
-    cursor: pointer;
-    text-wrap: nowrap;
+      color: white;
+      text-decoration: none;
+      transition: color 100ms ease-in-out;
+      cursor: pointer;
+      text-wrap: nowrap;
     }
     & a:hover {
       color: #70e61c;
@@ -152,14 +156,12 @@ nav {
       text-decoration-thickness: 3px;
     }
   }
-  
 
   .navbar-link {
-    
     display: none;
   }
 
-  .navbar-link a{
+  .navbar-link a {
     display: none;
   }
 }

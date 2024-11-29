@@ -31,17 +31,20 @@
     </div>
 
     <div class="burger-menu-responsive">
-        <div class="openBurger">
-          <img src="./assets/img/header/34. burger menu.png" (click)="openResponsiveMenu()" />
-        </div>
+      <div class="openBurger">
+        <img
+          src="./assets/img/header/34. burger menu.png"
+          (click)="openResponsiveMenu()"
+        />
       </div>
     </div>
-      <div class="overlay" *ngIf="showResponsiveMenu">
-        <div class="burger-con">
-          <a href="#aboutMeText" (click)="closeResponsiveMenu()">About me</a>
-          <a href="#skills" (click)="closeResponsiveMenu()">Skills</a>
-          <a href="#portfolio-section" (click)="closeResponsiveMenu()">Portfolio</a>
-          <a href="#contact" (click)="closeResponsiveMenu()">Contact</a>
-        </div>
-      </div>
+  </div>
+  <div class="overlay" *ngIf="showResponsiveMenu">
+    <div class="burger-con">
+      <a href="#aboutMeText" (click)="closeResponsiveMenu()">About me</a>
+      <a href="#skills" (click)="closeResponsiveMenu()">Skills</a>
+      <a href="#portfolio-section" (click)="closeResponsiveMenu()">Portfolio</a>
+      <a href="#contact" (click)="closeResponsiveMenu()">Contact</a>
+    </div>
+  </div>
 </nav>
