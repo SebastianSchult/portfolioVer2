@@ -134,7 +134,34 @@
 }
 
 .text-right-side {
-  display: none;
+  position: relative;
+  bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  rotate: 90deg;
+
+  p {
+    rotate: 90deg;
+    width: 133px;
+    height: 28px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    rotate: -90deg;
+
+    &:hover{
+      transition: transform .25s;
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: 1475px) {
@@ -368,7 +395,6 @@
   }
 
   .titel {
-    
     h1 {
       font-size: 23px;
       line-height: 22px;
