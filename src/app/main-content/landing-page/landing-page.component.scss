@@ -112,6 +112,7 @@
   justify-content: flex-start;
   gap: 42px;
   top: 867px;
+  padding-bottom: 8px;
 
   hr {
     display: block;
@@ -126,6 +127,7 @@
     width: 30px;
     transition: 200ms;
     transform: scale(1);
+    z-index: 10;
 
     &:hover {
       transform: scale(1.5);
@@ -141,6 +143,7 @@
   justify-content: flex-end;
   gap: 8px;
   rotate: 90deg;
+  z-index: 10;
 
   p {
     rotate: 90deg;
@@ -382,6 +385,8 @@
     width: 380px;
     height: 1100px;
   }
+
+  
 }
 
 @media screen and (max-width: 350px) {

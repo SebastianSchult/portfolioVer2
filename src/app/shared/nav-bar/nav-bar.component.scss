@@ -108,6 +108,9 @@ nav {
 @media screen and (max-width: 900px) {
   nav {
     position: fixed;
+    .nav-box {
+      padding: 10px 20px;
+    }
   }
 
   .burger-menu-responsive {
@@ -170,5 +173,9 @@ nav {
 @media screen and (max-width: 430px) {
   .nav-box {
     padding: 8px !important;
+  }
+
+  .lang-box {
+    padding-left: 20px;
   }
 }
