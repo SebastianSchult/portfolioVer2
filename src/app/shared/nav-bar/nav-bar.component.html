@@ -8,24 +8,26 @@
       >
     </div>
     <div class="navbar-links">
-      <a href="#about-me" class="navbar-link">About me</a>
+      <a href="#about-me" class="navbar-link">{{ 'ABOUTME' | translate}}</a>
       <a href="#skills" class="navbar-link">Skills</a>
       <a href="#portfolio-section" class="navbar-link">Portfolio</a>
 
       <div class="lang-box">
         <img
           class="lang-img"
-          style="display: none"
+          
           src=""
           alt="english"
           src="assets/img/language/flag_great_britain.png"
+          (click)="changeLanguage('en')"
         />
         <img
           class="lang-img"
-          style="display: none"
+          
           src=""
           alt="german"
           src="assets/img/language/flag_germany.webp"
+          (click)="changeLanguage('de')"
         />
       </div>
     </div>
