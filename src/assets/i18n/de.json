@@ -35,5 +35,7 @@
   "PRIVACYPOLICY": "Datenschutzrichtlinie",
   "PRIVACYSPAN2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
   "MSGSND": "absenden :)",
-  "MSGSUCCESS": "ist gesendet!"
+  "MSGSUCCESS": "ist gesendet!",
+
+  "IMPRINT": "Impressum"
 }
