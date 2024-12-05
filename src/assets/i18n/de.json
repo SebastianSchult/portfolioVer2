@@ -14,5 +14,10 @@
   "SKILLSTEXTBLOCKH2": "Auf der Suche nach",
   "SKILLSTEXTBLOCKH2SPAN": "anderen Skills",
   "SKILLSTEXTBLOCKP3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
-  "BTNCONTACT": "Kontakt aufnehmen"
+  "BTNCONTACT": "Kontakt aufnehmen",
+
+  "PORTFOLIOP": "Entdecken Sie hier eine Auswahl meiner Arbeiten – Interagieren Sie mit meinen Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+  "ELLOCODINODESCRIPTION": "Sprung-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Mina, Münzen und Tabasco-Salsa zu finden, um gegen die verrückten Dinosaurier zu kämpfen.",
+  "JOINDESCRIPTION": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
+  "POKEDEXDESCRIPTION": "Das Pokedex-Projekt ist eine innovative Webanwendung, die Pokémon-Fans eine umfassende und interaktive Plattform bietet, um Informationen über verschiedene Pokémon zu durchsuchen und anzuzeigen."
 }

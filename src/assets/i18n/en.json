@@ -13,5 +13,10 @@
     "SKILLSTEXTBLOCKH2": "Looking for",
     "SKILLSTEXTBLOCKH2SPAN": "another Skill",
     "SKILLSTEXTBLOCKP3": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
-    "BTNCONTACT": "Get in touch"
+    "BTNCONTACT": "Get in touch",
+
+    "PORTFOLIOP": "Explore a selection of my work here - Interact with my projects to see my skills in action.",
+    "ELLOCODINODESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Mina to find coins and tabasco salsa to fight against the crazy dinos.",
+    "JOINDESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "POKEDEXDESCRIPTION": "The Pokedex Project is an innovative web application that provides Pokémon fans with a comprehensive and interactive platform to browse and view information about various Pokémon."
 }
