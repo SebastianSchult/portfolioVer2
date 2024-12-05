@@ -92,6 +92,12 @@ section {
   max-width: 593px;
 }
 
+@media screen and (min-width: 1555px){
+  .about-me-description {
+    padding-top: 32px;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .about-me-img {
     left: 240px;
