@@ -1,7 +1,7 @@
 <div class="contact-section" id="contact">
   <div class="contact-content">
     <div class="contact-headline">
-      <h2>Contact</h2>
+      <h2> {{'CONTACT' | translate }} </h2>
       <div class="contact-line"></div>
     </div>
     <div class="contact-d-flex">
@@ -9,13 +9,12 @@
       <div>
         <div class="contact-line-span"></div>
         <div class="contact-text">
-          <span class="contact-text-headline">Got a problem to solve?</span>
+          <span class="contact-text-headline"> {{'PROBLEM' | translate}} </span>
           <span class="contact-text-block"
-            >Contact me through this form. I am interested in hearing from you
-            knowing your ideas and contributing to your projects with my work.
+            > {{'CONTACTTEXTBLOCK' | translate }}
           </span>
           <span class="contact-text-end"
-            >Need a Frontend Developer? <b>Contact me!</b>
+            > {{'CONTACTTEXTEND' | translate}} <b> {{'CONTACTTEXTENDCONTACT' | translate }} </b>
           </span>
         </div>
       </div>
@@ -29,7 +28,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Your name..."
+            placeholder=" {{ 'YOURNAME' | translate }} "
             required=""
           />
 
@@ -37,7 +36,7 @@
             *ngIf="name?.invalid && name?.touched"
             [ngClass]="{ 'error-text': name?.invalid && name?.touched }"
           >
-            Please enter a name</span
+            {{'ENTERNAME' | translate }}  </span
           >
 
           <label for="email"></label>
@@ -47,7 +46,7 @@
             type="email"
             id="email"
             name="email"
-            placeholder="Your email..."
+            placeholder=" {{'YOURMAIL' | translate }} "
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           />
@@ -55,7 +54,7 @@
             *ngIf="email?.invalid && email?.touched"
             [ngClass]="{ 'error-text': email?.invalid && email?.touched }"
           >
-            Please enter a valid email</span
+            {{'ENTERMAIL' | translate}}  </span
           >
 
           <label for="message"></label>
@@ -65,14 +64,14 @@
             type="email"
             id="message"
             name="message"
-            placeholder="Your message..."
+            placeholder=" {{'YOURMSG' | translate}} "
             required
           ></textarea>
 
           <span
             [ngClass]="{ 'error-text': message?.invalid && message?.touched }"
           >
-            Please enter a message</span
+            {{'ENTERMSG' | translate}}  </span
           >
 
           <div class="contact-form-btn-box">
@@ -87,8 +86,7 @@
                 <span class="contact-privacy-checkmark"></span>
               </label>
               <span
-                >I´ve read the <a>privacy policy </a> and agree to the
-                processing of my data as outlined.</span
+                > {{'PRIVACYSPAN1' | translate }} <a> {{'PRIVACYPOLICY' | translate }} </a> {{'PRIVACYSPAN2' | translate }} </span
               >
             </div>
             <button
@@ -100,7 +98,7 @@
               }"
               type="submit"
             >
-              {{ isButtonSuccess ? "message sent!" : "Send message :)" }}
+            {{ isButtonSuccess ? ('MSGSUCCESS' | translate) : ('MSGSND' | translate) }}
             </button>
           </div>
         </form>

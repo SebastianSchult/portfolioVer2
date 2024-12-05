@@ -3,16 +3,24 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { LanguageService } from '../../serices/language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink, RouterOutlet],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-section.component.html',
   styleUrl: './contact-section.component.scss'
 })
 export class ContactSectionComponent {
+
+  constructor(public languageService: LanguageService) {}
+
+  changeLanguage(language: string) {
+    this.languageService.changeLanguage(language);
+  }
 
   contactData = {
     name: "",
