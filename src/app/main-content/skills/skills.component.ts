@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageService } from '../../serices/language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -36,5 +38,11 @@ export class SkillsComponent {
 
   onLeaveContinous() {
     this.isHoveringContinous = false;
+  }
+
+  constructor(public languageService: LanguageService){}
+
+  changeLanguage(language: string) {
+    this.languageService.changeLanguage(language);
   }
 }

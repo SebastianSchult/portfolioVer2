@@ -3,9 +3,16 @@
   "SKILLS": "Skills",
   "PORTFOLIO": "Portfolio",
 
+
   "ABOUTMEDESCRIPTIONP1": "Hallo! Ich bin Sebastian, ein Frontend-Entwickler mit Leidenschaft für Gestaltung benutzerfreundlicher digitaler Erlebnisse. Mit einem Talent für Problemlösungsorientierung und mit einem Auge fürs Detail bin ich spezialisiert auf das realisieren komplexer Ideen in elegante Designs zu verwandeln.",
   "ABOUTMEDESCRIPTIONP2": "Lass uns zusammen etwas fantastisches erstellen!",
   "ABOUTMEDESCRIPTIONSPAN1": "Flexible in Bezug auf Arbeitsumgebungen, kann ich effektiv sowohl beim Standort als auch Remote arbeiten.",
   "ABOUTMEDESCRIPTIONSPAN2": "Ich bin offen für persönlliche Herausforderungen, um mein Wissen und Fertigkeiten stetig zu verbessern.",
-  "ABOUTMEDESCRIPTIONSPAN3":"Beim Programmieren geht es mir nicht nur darum, Code zu schreiben; es ist eine kreative Form des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken." 
+  "ABOUTMEDESCRIPTIONSPAN3":"Beim Programmieren geht es mir nicht nur darum, Code zu schreiben; es ist eine kreative Form des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken." ,
+
+  "SKILLSTEXTBLOCKP1": "Mein Lernprogress umfasst die Arbeit an verschiedenen Projekten, bei denen ich eine Vielzahl von Frontend-Technologien und -Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung einen Schritt voraus zu sein.",
+  "SKILLSTEXTBLOCKH2": "Auf der Suche nach",
+  "SKILLSTEXTBLOCKH2SPAN": "anderen Skills",
+  "SKILLSTEXTBLOCKP3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+  "BTNCONTACT": "Kontakt aufnehmen"
 }

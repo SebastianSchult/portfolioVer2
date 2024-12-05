@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../serices/language.service';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+
+  constructor(public languageService: LanguageService){}
+
+  changeLanguage(language: string) {
+    this.languageService.changeLanguage(language);
+  }
 
 }
