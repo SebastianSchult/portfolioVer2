@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterLink],
   templateUrl: './contact-section.component.html',
   styleUrl: './contact-section.component.scss'
 })

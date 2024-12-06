@@ -387,8 +387,12 @@
     width: 380px;
     height: 1100px;
   }
+}
 
-  
+@media screen and (max-width: 460px) {
+  .text-right-side {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 350px) {
