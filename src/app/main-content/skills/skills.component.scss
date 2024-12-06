@@ -1,7 +1,6 @@
 .skills-container {
   max-width: 1920px;
   margin: 0 auto;
-  position: relative;
 }
 .skills-bg {
   width: 1920px;
@@ -14,30 +13,19 @@
 .img {
   position: absolute;
   height: 878.5px;
-  width: 1920px;
-  top: -285px;
-  z-index: 2; /* Bild liegt über der anderen Komponente */
-  clip-path: polygon(
-    0 0,
-    66% 0,
-    66% 100%,
-    0 100%
-  ); /* Zeigt nur die ersten 66% des Bildes an */
+  width: 100vw;
+  top: -280px;
+  z-index: 1;
+  clip-path: polygon(0 0, 66% 0, 66% 100%, 0 100%);
 }
 
 .img-below {
   position: absolute;
   height: 878.5px;
-  width: 1980px; /* Begrenzung auf das rechte Drittel */
+  width: 100vw;
   top: -285px;
-  right: 0;
   z-index: 1;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 100%
-  ); /* Zeigt das rechte Drittel an */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 #skills {
@@ -79,7 +67,7 @@
 }
 
 .skill-item img {
-  height: 80px;
+  height: 60px;
   z-index: 8;
   transition: transform 250ms ease-in-out;
 }
@@ -147,7 +135,7 @@ h2 {
   line-height: 19.2px;
   text-align: left;
   width: 100%;
-  left: 116px;
+  padding-right: 8px;
 
   .btn-padding {
     padding-top: 40px;
@@ -175,22 +163,18 @@ h2 {
 
 .continous:hover .skill-description {
   opacity: 0;
-  transition: opacity;
 }
 
 .continous img {
-  transition: transform 0.3s ease-in-out;
-  height: 80px;
+  height: 60px;
   z-index: 8;
 }
 
 .continous-img2 {
-  bottom: 150px;
-  height: 290px !important;
+  bottom: 140px;
+  height: 260px !important;
   width: auto;
-  transition: transform 0.3s ease-in-out;
   position: relative;
-  object-fit: contain;
   left: 60px;
   cursor: pointer;
 }
@@ -218,16 +202,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1700px) {
-  .skills-bg {
-    top: -39px;
-  }
-}
-
 @media screen and (min-width: 1400px) and (max-width: 1545px) {
   .skills-bg {
     z-index: 1;
-    top: -68px;
   }
 
   .skills-text-section {
@@ -248,11 +225,6 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .skills-bg {
-    z-index: 1;
-    top: -68px;
-  }
-
   .skills-class {
     left: 50px;
   }
@@ -280,10 +252,6 @@ h2 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .skills-bg {
-    z-index: 1;
-    top: -80px;
-  }
   #skills {
     flex-direction: column;
   }
@@ -324,15 +292,14 @@ h2 {
   }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 900px) {
   #skills {
-    scroll-margin-top: 160px; 
+    scroll-margin-top: 160px;
   }
 
-  
   .skills-bg {
     z-index: 1;
-    top: -1014px;
+    top: 1400px;
   }
 }
 
@@ -342,7 +309,7 @@ h2 {
   }
   .skills-bg {
     z-index: 1;
-    top: -1090px;
+    top: 1400px;
   }
 
   .skills-headline {
@@ -398,7 +365,7 @@ h2 {
   }
   .skills-bg {
     z-index: 1;
-    top: -1090px;
+    top: 1210px;
   }
   .skills-claas-img .skill-item {
     flex: 1 1 calc(50% - 20px);
@@ -459,7 +426,7 @@ h2 {
 @media screen and (max-width: 400px) {
   .skills-bg {
     z-index: 1;
-    top: -1010px;
+    top: 1110px;
   }
 
   .skills-text-section .skills-headline {

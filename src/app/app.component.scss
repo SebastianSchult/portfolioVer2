@@ -1,6 +1,14 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .container {
     max-width: 1920px; // Setzt die maximale Breite auf 1440px
-    margin: 0 auto; // Zentriert den Inhalt bei größeren Bildschirmen
+    margin: 0; // Zentriert den Inhalt bei größeren Bildschirmen
   }
 
   .nav-container {
