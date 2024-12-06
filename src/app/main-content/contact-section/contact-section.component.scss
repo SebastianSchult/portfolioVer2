@@ -1,7 +1,6 @@
 .contact-section {
   background-color: #141d2f;
   z-index: 0;
-  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -304,14 +303,12 @@ button[type="submit"] {
 
 .purple-shadow {
   position: absolute;
-  bottom: -380px;
   left: 60%;
   z-index: 1;
 }
 
 @media screen and (min-width: 1201px) {
   .purple-shadow {
-    bottom: -580px;
     left: 80%;
   }
 }
@@ -322,7 +319,6 @@ button[type="submit"] {
     flex-direction: column;
   }
   .purple-shadow {
-    bottom: -500px;
     left: 80%;
   }
 }
@@ -340,7 +336,6 @@ button[type="submit"] {
     }
   }
   .purple-shadow {
-    bottom: -580px;
     left: 50%;
   }
 
@@ -419,7 +414,6 @@ button[type="submit"] {
   }
 
   .purple-shadow {
-    bottom: -530px;
     left: 60%;
   }
 
