@@ -1,0 +1,42 @@
+.imprint-overlay {
+  background-color: #141d2f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  text-align: center;
+  z-index: 50;
+
+  img {
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.imprint-content {
+  max-width: 1920px;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.impressum img {
+  left: 20%;
+  height: 40px;
+}
+
+@media screen and (min-width: 3840px) and (min-height: 2160px) {
+  .imprintOverlay {
+    font-size: 40px;
+    img {
+      scale: 1.5;
+    }
+  }
+}
