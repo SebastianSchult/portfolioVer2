@@ -325,6 +325,11 @@ h2 {
 }
 
 @media screen and (max-width: 899px) {
+  #skills {
+    scroll-margin-top: 160px; 
+  }
+
+  
   .skills-bg {
     z-index: 1;
     top: -1014px;

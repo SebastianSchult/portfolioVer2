@@ -8,13 +8,13 @@
   min-height: 700px;
   color: white;
   overflow: hidden;
-  position: relative;
+  
   margin: 0;
 }
 
 .shadow-purple {
   position: absolute;
-  left: -280px;
+  left: -72px;
   top: 99px;
   width: 820px;
   height: 720px;
@@ -24,12 +24,14 @@
 .shadow-blue {
   position: absolute;
   top: 2%;
-  right: -440px;
+  right: -336px;
   width: 820px;
-  height: 833px;
+  height: 971px;
   gap: 0px;
   rotate: 9.87deg;
 }
+
+
 
 .titel-box {
   display: flex;

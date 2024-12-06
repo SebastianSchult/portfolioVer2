@@ -6,7 +6,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [TranslateModule, RouterLink, RouterOutlet],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
