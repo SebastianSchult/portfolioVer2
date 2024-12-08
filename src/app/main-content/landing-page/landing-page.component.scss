@@ -1,3 +1,9 @@
+#landing-page {
+  min-height: clamp(50vh, 100vh - 0.5rem, 100vh);
+  display: flex;
+  align-items: center;
+}
+
 .landing-page-content {
   display: flex;
   align-items: center;
@@ -8,30 +14,29 @@
   min-height: 700px;
   color: white;
   overflow: hidden;
-  
   margin: 0;
 }
 
 .shadow-purple {
   position: absolute;
-  left: -72px;
-  top: 99px;
-  width: 820px;
-  height: 720px;
+  left: -111px;
+  z-index: 0;
+  width: 937px;
+  height: 999px;
   gap: 0px;
+  padding-bottom: 170px;
 }
 
 .shadow-blue {
   position: absolute;
-  top: 2%;
+  z-index: 0;
+  padding-top: 3%;
   right: -336px;
   width: 820px;
   height: 971px;
   gap: 0px;
   rotate: 9.87deg;
 }
-
-
 
 .titel-box {
   display: flex;
@@ -63,6 +68,7 @@
   gap: 6px;
   justify-content: center;
   bottom: 40px;
+  z-index: 6;
 
   h1 {
     font-size: 128px;
@@ -161,8 +167,8 @@
   img {
     rotate: -90deg;
 
-    &:hover{
-      transition: transform .25s;
+    &:hover {
+      transition: transform 0.25s;
       transform: scale(1.5);
       cursor: pointer;
     }
