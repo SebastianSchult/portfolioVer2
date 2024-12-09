@@ -108,6 +108,7 @@ nav {
 @media screen and (max-width: 900px) {
   nav {
     position: fixed;
+    max-width: 100vw;
     .nav-box {
       padding: 10px 20px;
     }
