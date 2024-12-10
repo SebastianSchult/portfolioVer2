@@ -18,12 +18,22 @@ export class AppComponent {
   currentLanguage: string = 'en';
   title = 'portfolio2';
 
+/**
+ * Initializes a new instance of the AppComponent class.
+ * @param languageService - The service used for managing language translations.
+ */
+
   constructor (
     private languageService: LanguageService
   ){
   
   }
 
+  /**
+   * Static method for changing the language of the application.
+   * @param language The language to change to. English = 'en', German = 'de'.
+   * @param translateService The TranslateService instance.
+   */
   static changeLanguageStatic(language: string, translateService: TranslateService) {
     translateService.use(language);
   }

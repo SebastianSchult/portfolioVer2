@@ -11,9 +11,18 @@ import { LanguageService } from '../../serices/language.service';
 export class LandingPageComponent {
   constructor(public languageService: LanguageService) {}
 
+  /**
+   * Change the language of the application.
+   * @param language The language to change to. English = 'en', German = 'de'.
+   */
   changeLanguage(language: string) {
     this.languageService.changeLanguage(language);
   }
+
+  /**
+   * Scrolls the page smoothly to the contact section of the webpage.
+   * Utilizes the 'scrollIntoView' method to ensure smooth scrolling behavior.
+   */
 
   scrollToContact() {
     const contactSection = document.querySelector('#contact');

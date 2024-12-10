@@ -6,33 +6,33 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { LanguageService } from '../../serices/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-contact-section',
   standalone: true,
   imports: [FormsModule, CommonModule, TranslateModule, RouterLink],
   templateUrl: './contact-section.component.html',
-  styleUrl: './contact-section.component.scss'
+  styleUrl: './contact-section.component.scss',
 })
 export class ContactSectionComponent {
-
   constructor(public languageService: LanguageService) {}
 
+  /**
+   * Changes the language of the application.
+   * @param language The language to change to. English = 'en', German = 'de'.
+   */
   changeLanguage(language: string) {
     this.languageService.changeLanguage(language);
   }
 
   contactData = {
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   };
 
   http = inject(HttpClient);
 
   privacyPolicyChecked: boolean = false;
-
-  
 
   mailTest = false;
   isButtonSuccess: boolean = false;
@@ -49,9 +49,14 @@ export class ContactSectionComponent {
     },
   };
 
+  /**
+   * Handle the contact form submission.
+   * @param ngForm The NgForm instance.
+   */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
@@ -66,5 +71,5 @@ export class ContactSectionComponent {
           complete: () => console.info('send post complete'),
         });
     }
-}
+  }
 }

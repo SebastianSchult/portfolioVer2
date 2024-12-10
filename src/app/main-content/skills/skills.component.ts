@@ -32,16 +32,26 @@ export class SkillsComponent {
 
   ];
 
+  /**
+   * When the mouse hovers over the 'Continually learning' skill element, this function sets the flag to show the hover state.
+   */
   onHoverContinous() {
     this.isHoveringContinous = true;
   }
 
+  /**
+   * When the mouse leaves the 'Continually learning' skill element, this function sets the flag to not show the hover state.
+   */
   onLeaveContinous() {
     this.isHoveringContinous = false;
   }
 
   constructor(public languageService: LanguageService){}
 
+  /**
+   * Change the language of the application.
+   * @param language The language to change to. English = 'en', German = 'de'.
+   */
   changeLanguage(language: string) {
     this.languageService.changeLanguage(language);
   }
