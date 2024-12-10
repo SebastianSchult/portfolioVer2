@@ -29,7 +29,8 @@
             id="name"
             name="name"
             placeholder=" {{ 'YOURNAME' | translate }} "
-            required=""
+            required
+            pattern="[a-zA-ZäöüÄÖÜß ]*"
           />
 
           <span
@@ -86,7 +87,7 @@
                 <span class="contact-privacy-checkmark"></span>
               </label>
               <span
-                > {{'PRIVACYSPAN1' | translate }} <a routerLink="/imprint"> {{'PRIVACYPOLICY' | translate }} </a> {{'PRIVACYSPAN2' | translate }} </span
+                > {{'PRIVACYSPAN1' | translate }} <a> {{'PRIVACYPOLICY' | translate }} </a> {{'PRIVACYSPAN2' | translate }} </span
               >
             </div>
             <button
@@ -114,7 +115,7 @@
         </a>
       </div>
     </div>
-  </div>
+    </div>
     <div class="purple-shadow">
       <img src="assets/img/background/55. Purple shadow footer V2.png" alt="">
     </div>
