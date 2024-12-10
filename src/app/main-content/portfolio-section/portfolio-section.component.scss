@@ -18,6 +18,9 @@
   align-items: center;
   width: 100%;
   position: relative;
+  @media (min-width: 1920px) {
+    position: static;
+  }
 }
 
 .portfolio-header {
@@ -49,6 +52,14 @@
   height: 4px;
   border-radius: 0 10px 10px 0;
   background-color: #9747ff;
+  padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: 1920px) {
+    width: calc(35px + 68vw - 1920px);
+    position: absolute;
+    left: 0;
+  }
 }
 
 .project-content {
@@ -277,11 +288,10 @@
   }
 }
 @media screen and (max-width: 900px) {
-.portfolio-section{
-  position: relative;
+  .portfolio-section {
+    position: relative;
+  }
 }
-}
-
 
 @media screen and (max-width: 480px) {
   .portfolio-section {

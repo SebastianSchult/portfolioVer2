@@ -137,7 +137,8 @@
   padding: 0;
 
   @media (min-width: 1920px) {
-    width: calc(300px + (70vw - 1920px));}
+    width: calc(300px + (70vw - 1920px));
+  }
 }
 
 .landingpage-bottom-section {
@@ -172,7 +173,7 @@
   right: 100px;
   @keyframes wobble {
     0% {
-      transform: translateY(-2px) rotate(0deg); /* Hier haben wir translateY für die Bewegung nach unten und rotate für die Rotation hinzugefügt */
+      transform: translateY(-2px) rotate(0deg);
     }
     50% {
       transform: translateY(2px) rotate(0deg);
@@ -200,8 +201,6 @@
     margin: 37px auto;
   }
 }
-
-
 
 @media screen and (max-width: 1475px) {
   .titel {
