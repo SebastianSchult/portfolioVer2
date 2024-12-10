@@ -1,20 +1,24 @@
 #landing-page {
-  min-height: clamp(50vh, 100vh - 0.5rem, 100vh);
+  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .landing-page-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #151d2e;
   background-size: cover;
   width: 100%;
-  min-height: 700px;
+
   color: white;
   overflow: hidden;
-  
+}
+
+.shadow-section {
 }
 
 .shadow-purple {
@@ -42,8 +46,6 @@
   display: flex;
   gap: 12px;
   z-index: 2;
-  padding-right: 140px;
-  padding-top: 297px;
   padding-bottom: 72px;
 }
 
@@ -133,6 +135,9 @@
   border: 4px;
   border-top: 4px solid #70e61c;
   padding: 0;
+
+  @media (min-width: 1920px) {
+    width: calc(300px + (70vw - 1920px));}
 }
 
 .landingpage-bottom-section {
@@ -154,18 +159,17 @@
 }
 
 .text-right-side {
-  display: flex
-;
-    flex-direction: column;
-    position: absolute;
-    width: 28px;
-    height: 160px;
-    animation: _ngcontent-ng-c1899405114_wobble .8s infinite linear;
-    align-items: center;
-    justify-content: center;
-    bottom: 4px;
-    margin-left: auto;
-    right: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 28px;
+  height: 160px;
+  animation: _ngcontent-ng-c1899405114_wobble 0.8s infinite linear;
+  align-items: center;
+  justify-content: center;
+  bottom: 4px;
+  margin-left: auto;
+  right: 100px;
   @keyframes wobble {
     0% {
       transform: translateY(-2px) rotate(0deg); /* Hier haben wir translateY für die Bewegung nach unten und rotate für die Rotation hinzugefügt */
@@ -197,11 +201,7 @@
   }
 }
 
-@media screen and (min-width: 3840px) and (min-height: 1100px) {
-  .landingpage-line {
-    width: 1285px;
-  }
-}
+
 
 @media screen and (max-width: 1475px) {
   .titel {
@@ -257,6 +257,10 @@
 }
 
 @media screen and (max-width: 1050px) {
+  #landing-page {
+    position: relative;
+  }
+
   .titel-box {
     padding-right: 40px;
   }
@@ -285,7 +289,6 @@
     }
   }
 
-  
   .btn-primary {
     width: auto;
     height: 49px;
@@ -293,8 +296,6 @@
   }
 
   .shadow-purple {
-    left: -120px;
-    top: 150px;
     width: 573.79px;
     height: 589.95px;
     gap: 0px;
@@ -302,7 +303,6 @@
 
   .shadow-blue {
     top: 2%;
-    right: -200px;
     width: 580px;
     height: 1100px;
   }
@@ -326,6 +326,10 @@
       font-size: 24px;
       line-height: 18px;
     }
+  }
+
+  .landingpage-line {
+    width: 224px;
   }
 }
 
@@ -355,31 +359,15 @@
       }
     }
   }
-
-  .shadow-purple {
-    left: -120px;
-    top: 240px;
-    width: 373.79px;
-    height: 389.95px;
-    gap: 0px;
-  }
-
-  .shadow-blue {
-    top: 2%;
-    right: -200px;
-    width: 380px;
-    height: 1100px;
+  .landingpage-line {
+    width: 62px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .titel-box {
-    display: flex;
-    gap: 10px;
     padding-right: 0px;
-    padding-top: 320px;
     padding-left: 12px;
-    width: 100%;
   }
 
   .titel {
@@ -405,35 +393,28 @@
   }
 
   .shadow-purple {
-    left: -120px;
-    top: 240px;
     width: 373.79px;
-    height: 389.95px;
     gap: 0px;
   }
 
-  .shadow-blue {
-    top: 2%;
-    right: -200px;
-    width: 380px;
-    height: 1100px;
+  .landingpage-line {
+    width: 62px;
   }
 }
 
 @media screen and (max-width: 460px) {
+  .landingpage-line {
+    width: 54px;
+  }
+
   .text-right-side {
     display: none;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .titel-box {
-    display: flex;
-    gap: 10px;
-    padding-right: 0px;
-    padding-top: 320px;
-    padding-left: 12px;
-    width: 100%;
+  .landingpage-line {
+    width: 54px;
   }
 
   .titel {
