@@ -111,9 +111,17 @@
   border-radius: 24px;
 
   @media screen and (min-width: 1921px) {
-    width: calc(65vw - 1920px);
+    width: calc(300px + 80vw - 1920px);
     position: absolute;
     right: 0px;
+  }
+
+  @media screen and (min-width: 2800px) {
+    width: calc(150px + 80vw - 1920px);
+  }
+
+  @media screen and (min-width: 3500px) {
+    width: calc(150px + 70vw - 1920px);
   }
 }
 

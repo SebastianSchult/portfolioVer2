@@ -132,8 +132,21 @@
   border-top: 4px solid #70e61c;
   padding: 0;
 
-  @media (min-width: 1921px) {
-    width: calc(300px + 100vw - 1920px);
+  @media screen and (min-width: 1921px) {
+    width: calc(300px + 90vw - 1920px);
+    left: 0px;
+  }
+
+  @media screen and (min-width: 2200px) {
+    width: calc(300px + 85vw - 1920px);
+  }
+
+  @media screen and (min-width: 2800px) {
+    width: calc(150px + 80vw - 1920px);
+  }
+
+  @media screen and (min-width: 3500px) {
+    width: calc(150px + 70vw - 1920px);
   }
 }
 
