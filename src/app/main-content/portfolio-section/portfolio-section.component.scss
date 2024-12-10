@@ -276,6 +276,12 @@
     width: 240px;
   }
 }
+@media screen and (max-width: 900px) {
+.portfolio-section{
+  position: relative;
+}
+}
+
 
 @media screen and (max-width: 480px) {
   .portfolio-section {
