@@ -195,7 +195,6 @@ button[type="submit"] {
   position: relative;
   bottom: 30px;
   text-wrap: nowrap;
-  align-items: center;
   a {
     text-decoration: none;
     color: #9747ff;
@@ -208,9 +207,7 @@ button[type="submit"] {
 
 .contact-checkbox-container {
   display: block;
-  position: relative;
   padding-left: 35px;
-  margin-top: 13px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
