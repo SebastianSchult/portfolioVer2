@@ -1,5 +1,5 @@
 #landing-page {
-  height: 100vh;
+  min-height: clamp(50vh, 100vh - 0.5rem, 100vh);
   display: flex;
   align-items: center;
   justify-content: center;
