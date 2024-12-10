@@ -328,6 +328,12 @@ button[type="submit"] {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .contact-section{
+    position: relative;
+  }
+  }
+
 @media screen and (max-width: 767px) {
   .contact-headline {
     gap: 16px;
