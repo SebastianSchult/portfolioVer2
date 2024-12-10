@@ -27,23 +27,23 @@
     position: relative;
     transform: translate(-50%);
   }
-  @media screen and (min-width: 1921px){
+  @media screen and (min-width: 1921px) {
     position: static;
   }
 }
 
 .contact-line {
-  width: 600px; /* Standardbreite im Content */
+  width: 600px;
   height: 4px;
   background-color: #70e61c;
   border-radius: 10px 0px 0px 10px;
   position: relative;
 
   @media screen and (min-width: 1921px) {
-    width: calc(65vw - 1920px); /* Dehnt sich ab der rechten Content-Grenze bis zum Bildschirmrand */
-    max-width: unset; /* Entfernt Begrenzungen */
-    position: absolute; /* Ermöglicht absolute Positionierung */
-    right: 0px; /* Startet ab der rechten Grenze des Content-Bereichs */
+    width: calc(65vw - 1920px);
+    max-width: unset;
+    position: absolute;
+    right: 0px;
   }
 }
 
@@ -339,10 +339,10 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 900px) {
-  .contact-section{
+  .contact-section {
     position: relative;
   }
-  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-headline {
