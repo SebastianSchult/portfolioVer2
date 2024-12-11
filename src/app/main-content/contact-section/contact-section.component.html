@@ -1,20 +1,22 @@
 <div class="contact-section" id="contact">
   <div class="contact-content">
     <div class="contact-headline">
-      <h2> {{'CONTACT' | translate }} </h2>
+      <h2>{{ "CONTACT" | translate }}</h2>
       <div class="contact-line"></div>
     </div>
     <div class="contact-d-flex">
-      
       <div>
         <div class="contact-line-span"></div>
         <div class="contact-text">
-          <span class="contact-text-headline"> {{'PROBLEM' | translate}} </span>
-          <span class="contact-text-block"
-            > {{'CONTACTTEXTBLOCK' | translate }}
+          <span class="contact-text-headline">
+            {{ "PROBLEM" | translate }}
           </span>
-          <span class="contact-text-end"
-            > {{'CONTACTTEXTEND' | translate}} <b> {{'CONTACTTEXTENDCONTACT' | translate }} </b>
+          <span class="contact-text-block">
+            {{ "CONTACTTEXTBLOCK" | translate }}
+          </span>
+          <span class="contact-text-end">
+            {{ "CONTACTTEXTEND" | translate }}
+            <b> {{ "CONTACTTEXTENDCONTACT" | translate }} </b>
           </span>
         </div>
       </div>
@@ -37,8 +39,8 @@
             *ngIf="name?.invalid && name?.touched"
             [ngClass]="{ 'error-text': name?.invalid && name?.touched }"
           >
-            {{'ENTERNAME' | translate }}  </span
-          >
+            {{ "ENTERNAME" | translate }}
+          </span>
 
           <label for="email"></label>
           <input
@@ -47,7 +49,7 @@
             type="email"
             id="email"
             name="email"
-            placeholder=" {{'YOURMAIL' | translate }} "
+            placeholder=" {{ 'YOURMAIL' | translate }} "
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           />
@@ -55,8 +57,8 @@
             *ngIf="email?.invalid && email?.touched"
             [ngClass]="{ 'error-text': email?.invalid && email?.touched }"
           >
-            {{'ENTERMAIL' | translate}}  </span
-          >
+            {{ "ENTERMAIL" | translate }}
+          </span>
 
           <label for="message"></label>
           <textarea
@@ -65,15 +67,16 @@
             type="email"
             id="message"
             name="message"
-            placeholder=" {{'YOURMSG' | translate}} "
+            placeholder=" {{ 'YOURMSG' | translate }} "
             required
           ></textarea>
 
           <span
+            *ngIf="message?.invalid && message?.touched"
             [ngClass]="{ 'error-text': message?.invalid && message?.touched }"
           >
-            {{'ENTERMSG' | translate}}  </span
-          >
+            {{ "ENTERMSG" | translate }}
+          </span>
 
           <div class="contact-form-btn-box">
             <div class="privacy-policy">
@@ -86,9 +89,11 @@
                 />
                 <span class="contact-privacy-checkmark"></span>
               </label>
-              <span
-                > {{'PRIVACYSPAN1' | translate }} <a routerLink="/imprint"> {{'PRIVACYPOLICY' | translate }} </a> {{'PRIVACYSPAN2' | translate }} </span
-              >
+              <span>
+                {{ "PRIVACYSPAN1" | translate }}
+                <a routerLink="/imprint"> {{ "PRIVACYPOLICY" | translate }} </a>
+                {{ "PRIVACYSPAN2" | translate }}
+              </span>
             </div>
             <button
               [disabled]="!contactForm.valid || !privacyPolicyChecked"
@@ -99,7 +104,11 @@
               }"
               type="submit"
             >
-            {{ isButtonSuccess ? ('MSGSUCCESS' | translate) : ('MSGSND' | translate) }}
+              {{
+                isButtonSuccess
+                  ? ("MSGSUCCESS" | translate)
+                  : ("MSGSND" | translate)
+              }}
             </button>
           </div>
         </form>
@@ -108,16 +117,12 @@
             src="assets/img/contact/4. Go up button.png"
             class="defaultImg"
           />
-          <img
-            src="assets/img/contact/go up btn hover.png"
-            class="hoverImg"
-          />
+          <img src="assets/img/contact/go up btn hover.png" class="hoverImg" />
         </a>
       </div>
     </div>
-    </div>
-    <div class="purple-shadow">
-      <img src="assets/img/background/55. Purple shadow footer V2.png" alt="">
-    </div>
-  
+  </div>
+  <div class="purple-shadow">
+    <img src="assets/img/background/55. Purple shadow footer V2.png" alt="" />
+  </div>
 </div>
