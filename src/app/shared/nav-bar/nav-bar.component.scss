@@ -11,10 +11,11 @@ nav {
   .nav-box {
     display: flex;
     flex-direction: row;
-    padding: 24px 0px;
+    padding: 24px 16px;
     gap: 29px;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   .logo {
