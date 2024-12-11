@@ -91,6 +91,7 @@
 .btn {
   text-decoration: none;
   padding-top: 72px;
+  z-index: 5;
 
   .btn-trans {
     transition: 220ms;
@@ -106,6 +107,7 @@
   width: 170px;
   height: 58px;
   font-size: 23px;
+  z-index: 5;
 }
 
 .landingpage-bottom-section {
