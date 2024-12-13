@@ -194,6 +194,7 @@ button[type="submit"] {
 
 .privacy-policy {
   display: flex;
+  align-items: center;
   color: white;
   font-weight: 400;
   font-size: 14px;
@@ -253,7 +254,7 @@ button[type="submit"] {
   display: block;
 }
 
-.contact-checkbox-container .contact-privacy-checkmark:after {
+/*. contact-checkbox-container .contact-privacy-checkmark:after {
   left: 4px;
   bottom: 2px;
   width: 4px;
@@ -263,7 +264,19 @@ button[type="submit"] {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+} */
+
+.contact-checkbox-container .contact-privacy-checkmark:after {
+  left: 50%;
+  bottom: 60%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  width: 6px; /* Passe die Breite an */
+  height: 12px; /* Passe die Höhe an */
+  border: solid #70e61c;
+  border-width: 0 3px 3px 0;
 }
+
+
 
 .error-text {
   color: #e61c40;

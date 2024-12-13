@@ -7,13 +7,12 @@
   text-align: center;
   z-index: 50;
   padding-bottom: 50px;
-  padding: 8px;
+  padding: 16px;
+  padding-top: 40px;
 
   img {
-    position: absolute;
     display: flex;
     z-index: 1000;
-    top: 6%;
     left: 5%;
   }
   a {
@@ -25,12 +24,12 @@
 .imprint-content {
   max-width: 1920px;
   width: 100%;
-
   display: flex;
   justify-content: center;
 }
 
 .impressum img {
+  padding-top: 5%;
   height: 30px;
 
   &:hover {
