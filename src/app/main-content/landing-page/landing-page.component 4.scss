@@ -5,7 +5,6 @@
   justify-content: center;
   max-width: 1920px;
   margin: 0 auto;
- 
 }
 
 .landing-page-content {
@@ -39,8 +38,8 @@
   gap: 0px;
   rotate: 9.87deg;
 
-  @media screen and (min-width: 1921px) {
-    left: 70vw;
+  @media screen and (min-width: 1921px){
+
   }
 }
 
@@ -190,6 +189,11 @@
   bottom: 4px;
   margin-left: auto;
   right: 100px;
+  
+  @media screen and (min-width: 1921px) {
+    margin-right: 40vw;
+  }
+  
   @keyframes wobble {
     0% {
       transform: translateY(-2px) rotate(0deg);
@@ -200,8 +204,6 @@
     100% {
       transform: translateY(-2px) rotate(0deg);
     }
-
-   
   }
 
   p {
@@ -221,7 +223,7 @@
     height: 26px;
     margin: 37px auto;
   }
-  @media screen and (min-width: 1921px){
+  @media screen and (min-width: 1921px) {
     margin-left: 0;
     margin-right: 25vw;
   }
@@ -287,7 +289,6 @@
 
   .landingpage-bottom-section {
     padding-top: 0;
-    
   }
 
   .titel-box {
@@ -432,9 +433,9 @@
 }
 
 @media screen and (max-width: 460px) {
-.titel-box {
-  height: 120px;
-}
+  .titel-box {
+    height: 120px;
+  }
 
   .landingpage-line {
     width: 54px;

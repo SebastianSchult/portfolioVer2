@@ -57,7 +57,7 @@
   box-sizing: border-box;
 
   @media (min-width: 1921px) {
-    width: calc(300px + 65vw - 1920px);
+    width: calc(300px + 55vw - 1920px);
     position: absolute;
     left: 0;
   }
@@ -203,6 +203,11 @@
   position: absolute;
   right: -360px;
   z-index: 1;
+
+  @media screen and (min-width: 1921px) {
+    right: 0;
+    left: 70vw;
+  }
 }
 
 @media screen and (max-width: 1310px) {
