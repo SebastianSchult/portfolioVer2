@@ -218,6 +218,14 @@ h2 {
   }
 }
 
+@media screen and  (max-width: 1919px) {
+  .skills-container {
+    position: relative;
+  }
+}
+  
+
+
 @media screen and (min-width: 1400px) and (max-width: 1545px) {
   .skills-bg {
     z-index: 1;

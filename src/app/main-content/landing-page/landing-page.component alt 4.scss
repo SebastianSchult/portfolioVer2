@@ -5,6 +5,12 @@
   justify-content: center;
   max-width: 1920px;
   margin: 0 auto;
+ 
+
+  @media screen and (max-width: 1919px){
+    position: relative;
+    max-width: 100%;
+  }
 }
 
 .landing-page-content {
@@ -16,6 +22,7 @@
   background-size: cover;
   width: 100%;
   color: white;
+
 }
 
 .shadow-purple {
@@ -193,7 +200,7 @@
   @media screen and (min-width: 1921px) {
     margin-right: 40vw;
   }
-  
+
   @keyframes wobble {
     0% {
       transform: translateY(-2px) rotate(0deg);

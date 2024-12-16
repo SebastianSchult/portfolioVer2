@@ -5,6 +5,10 @@
   justify-content: center;
   max-width: 1920px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1919px){
+    position: relative;
+  }
 }
 
 .portfolio-content {

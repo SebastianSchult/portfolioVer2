@@ -5,6 +5,11 @@
   justify-content: center;
   padding-bottom: 215px;
 
+  @media screen and (max-width: 1919px){
+    position: relative;
+    max-width: 100%;
+  }
+
 }
 
 .contact-content {
