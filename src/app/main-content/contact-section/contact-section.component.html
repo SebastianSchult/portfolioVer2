@@ -43,22 +43,22 @@
           </span>
 
           <label for="email"></label>
-          <input
-            #email="ngModel"
-            [(ngModel)]="contactData.email"
-            type="email"
-            id="email"
-            name="email"
-            placeholder=" {{ 'YOURMAIL' | translate }} "
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          />
-          <span
-            *ngIf="email?.invalid && email?.touched"
-            [ngClass]="{ 'error-text': email?.invalid && email?.touched }"
-          >
-            {{ "ENTERMAIL" | translate }}
-          </span>
+<input
+  #email="ngModel"
+  [(ngModel)]="contactData.email"
+  type="email"
+  id="email"
+  name="email"
+  placeholder="{{ 'YOURMAIL' | translate }}"
+  required
+  (ngModelChange)="validateEmail()"
+/>
+<span
+  *ngIf="!isEmailValid(contactData.email) && email.touched"
+  class="error-text"
+>
+  {{ "ENTERMAIL" | translate }}
+</span>
 
           <label for="message"></label>
           <textarea

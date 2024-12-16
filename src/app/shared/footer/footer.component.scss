@@ -7,7 +7,7 @@ footer {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  position: relative;
+  
 }
 
 .footer-content {
@@ -15,6 +15,7 @@ footer {
   flex-direction: column;
   max-width: 1920px;
   width: 100%;
+  position: relative;
 }
 
 .footer-line {
@@ -133,6 +134,10 @@ footer {
     flex-direction: column;
   }
 
+  .footer-line {
+    margin-bottom: 25%;
+  }
+
   .logo {
     padding-top: 16px;
   }
@@ -164,4 +169,10 @@ footer {
   }
 }
 
+@media screen and (max-width: 630px)
+{
+  .footer-line {
+    margin-bottom: 50%;
+  }
+}
 

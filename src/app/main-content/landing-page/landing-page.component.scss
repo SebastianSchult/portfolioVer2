@@ -1,11 +1,11 @@
 #landing-page {
-  min-height: clamp(50vh, 100vh - 0.5rem, 100vh);
+  min-height: clamp(50vh, 100vh, 100vh);
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 1920px;
-  margin: 0;
-
+  margin: 0 auto;
+ 
 }
 
 .landing-page-content {
