@@ -5,15 +5,14 @@
   justify-content: center;
   padding-bottom: 215px;
 
-  @media screen and (max-width: 1919px){
+  @media screen and (max-width: 1919px) {
     position: relative;
     max-width: 100%;
   }
-
 }
 
-#skills {
-  scroll-margin-top: 24px;
+#contact {
+  scroll-margin-top: 58px;
 }
 
 .contact-content {
@@ -51,11 +50,16 @@
 
   @media screen and (min-width: 1921px) {
     position: absolute;
-        right: 0;
-        width: 40vw;
+    right: 0;
+    width: 40vw;
   }
+
+  @media screen and (min-width: 1928px) and (max-width: 2399px) {
+    width: 20vw;
+  }
+
   @media screen and (min-width: 2400px) {
-        width: 40vw;
+    width: 30vw;
   }
 }
 
@@ -286,8 +290,6 @@ button[type="submit"] {
   border-width: 0 3px 3px 0;
 }
 
-
-
 .error-text {
   color: #e61c40;
   position: relative;
@@ -342,9 +344,6 @@ button[type="submit"] {
 }
 
 @media screen and (min-width: 1281px) {
-  .purple-shadow {
-      position: static;
-  }
 }
 
 @media screen and (max-width: 1119px) {
@@ -372,7 +371,7 @@ button[type="submit"] {
   #contact {
     position: relative;
     padding-top: 30px;
-    margin-top: -30px
+    margin-top: -30px;
   }
   .contact-section {
     position: relative;
@@ -526,5 +525,9 @@ button[type="submit"] {
   .contact-btn-up {
     margin-top: 560px;
     right: 36px;
+  }
+
+  #contact {
+    scroll-margin-top: 12px;
   }
 }

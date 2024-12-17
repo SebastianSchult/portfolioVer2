@@ -214,7 +214,7 @@
 
   @media screen and (min-width: 1921px) {
     right: 0;
-    left: 70vw;
+    left: 60vw;
   }
 }
 
@@ -403,5 +403,9 @@
   .project-btn-git a:hover,
   .project-btn-live a:hover {
     background-color: #70e61c;
+  }
+
+  #portfolio-section {
+    scroll-margin-top: 12px;
   }
 }
