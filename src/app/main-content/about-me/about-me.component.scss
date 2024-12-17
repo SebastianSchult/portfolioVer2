@@ -8,6 +8,10 @@ section {
   margin: 0 auto;
 }
 
+#about-me {
+  scroll-margin-top: 24px;
+}
+
 .about-me {
   display: flex;
   flex-direction: row;
@@ -197,7 +201,7 @@ section {
     width: 340px;
     h1 {
       padding: 1rem 0rem;
-      font-size: 50px;
+      font-size: 90px;
       margin: 0;
     }
     p {
@@ -315,7 +319,7 @@ section {
     width: 350px;
     left: 30px;
     h1 {
-      font-size: 45px;
+      font-size: 48px;
     }
   }
 

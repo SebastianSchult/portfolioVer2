@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../serices/language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
 })

@@ -135,7 +135,9 @@ footer {
   }
 
   .footer-line {
-    margin-bottom: 25%;
+    margin-bottom: 0;
+    width: 100%;
+    position: static;
   }
 
   .logo {
@@ -169,10 +171,5 @@ footer {
   }
 }
 
-@media screen and (max-width: 630px)
-{
-  .footer-line {
-    margin-bottom: 50%;
-  }
-}
+
 

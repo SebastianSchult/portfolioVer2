@@ -1,7 +1,11 @@
 {
   "ABOUTME": "Über mich",
-  "SKILLS": "Skills",
+  "SKILLS": "Kenntnisse",
   "PORTFOLIO": "Portfolio",
+
+  "I": "Ich bin",
+  "DEVELOPER": "ENTWICKLER",
+  "SCROLL": "herunter",
 
   "ABOUTMEDESCRIPTIONP1": "Hallo! Ich bin Sebastian, ein Frontend-Entwickler mit Leidenschaft für Gestaltung benutzerfreundlicher digitaler Erlebnisse. Mit einem Talent für Problemlösungsorientierung und mit einem Auge fürs Detail bin ich spezialisiert auf das realisieren komplexer Ideen in elegante Designs zu verwandeln.",
   "ABOUTMEDESCRIPTIONP2": "Lass uns zusammen etwas fantastisches erstellen!",

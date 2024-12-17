@@ -5,9 +5,9 @@
   justify-content: center;
   max-width: 1920px;
   margin: 0 auto;
- 
+  overflow: hidden;
 
-  @media screen and (max-width: 1919px){
+  @media screen and (max-width: 1919px) {
     position: relative;
     max-width: 100%;
   }
@@ -22,7 +22,6 @@
   background-size: cover;
   width: 100%;
   color: white;
-
 }
 
 .shadow-purple {
@@ -45,8 +44,7 @@
   gap: 0px;
   rotate: 9.87deg;
 
-  @media screen and (min-width: 1921px){
-
+  @media screen and (min-width: 1921px) {
   }
 }
 
@@ -196,7 +194,7 @@
   bottom: 4px;
   margin-left: auto;
   right: 100px;
-  
+
   @media screen and (min-width: 1921px) {
     margin-right: 40vw;
   }

@@ -9,7 +9,7 @@
     </div>
     <div class="navbar-links">
       <a href="#about-me" class="navbar-link">{{ 'ABOUTME' | translate}}</a>
-      <a href="#skills" class="navbar-link">Skills</a>
+      <a href="#skills" class="navbar-link">{{ 'SKILLS' | translate}}</a>
       <a href="#portfolio-section" class="navbar-link">Portfolio</a>
 
       <div class="lang-box">
@@ -44,7 +44,7 @@
   <div class="overlay" *ngIf="showResponsiveMenu">
     <div class="burger-con">
       <a href="#about-me" (click)="closeResponsiveMenu()">About me</a>
-      <a href="#skills" (click)="closeResponsiveMenu()">Skills</a>
+      <a href="#skills-headliner" (click)="closeResponsiveMenu()">Skills</a>
       <a href="#portfolio-section" (click)="closeResponsiveMenu()">Portfolio</a>
       <a href="#contact" (click)="closeResponsiveMenu()">Contact</a>
     </div>

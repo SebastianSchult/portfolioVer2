@@ -11,6 +11,10 @@
   }
 }
 
+#portfolio-section {
+  scroll-margin-top: 24px;
+}
+
 .portfolio-content {
   max-width: 1920px;
   width: 100%;
@@ -31,7 +35,7 @@
 .portfolio-header {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
   color: white;
 
   h2 {
@@ -236,14 +240,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .portfolio-section {
-    padding-top: 20px;
+    padding-top: 128px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .portfolio-section {
-    padding-top: 20px;
-  }
+ 
   .project-img {
     width: 340px;
     height: 339.43px;
@@ -300,14 +302,11 @@
 @media screen and (max-width: 900px) {
   .portfolio-section {
     position: relative;
+    padding-top: 128px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .portfolio-section {
-    padding-top: 20px;
-  }
-
   .portfolio-header {
     h2 {
       font-size: 48px;
