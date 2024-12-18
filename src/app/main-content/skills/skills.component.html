@@ -41,22 +41,28 @@
 
     <div class="skills-text-section">
       <div class="skills-headline" id="skills-headliner">
-        <h1>{{ 'SKILLS' | translate}}</h1>
+        <h1>{{ "SKILLS" | translate }}</h1>
         <div class="skills-line"></div>
       </div>
       <div class="skills-text-block">
         <p>
-          {{'SKILLSTEXTBLOCKP1' | translate }}
+          {{ "SKILLSTEXTBLOCKP1" | translate }}
         </p>
 
         <h2>
-          {{'SKILLSTEXTBLOCKH2' | translate }} <span class="skillstext-dif-color">{{'SKILLSTEXTBLOCKH2SPAN' | translate }}</span> ?
+          {{ "SKILLSTEXTBLOCKH2" | translate }}
+          <span class="skillstext-dif-color">{{
+            "SKILLSTEXTBLOCKH2SPAN" | translate
+          }}</span>
+          ?
         </h2>
         <p>
-          {{'SKILLSTEXTBLOCKP3' | translate }}
+          {{ "SKILLSTEXTBLOCKP3" | translate }}
         </p>
         <a href="#contact" class="btn btn-ref btn-padding">
-          <button class="btn-primary btn-trans">{{'BTNCONTACT' | translate }}</button>
+          <button class="btn-primary btn-trans">
+            {{ "BTNCONTACT" | translate }}
+          </button>
         </a>
       </div>
     </div>
