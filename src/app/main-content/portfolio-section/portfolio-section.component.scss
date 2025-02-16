@@ -306,6 +306,38 @@
   }
 }
 
+@media screen and (max-width: 1310px) {
+  .project-d-none {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    top: auto;
+
+    .project-d-flex {
+      margin-top: -50px;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      div {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  
+}
+
 @media screen and (max-width: 480px) {
   .portfolio-header {
     h2 {
