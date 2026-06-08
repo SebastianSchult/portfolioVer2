@@ -3,7 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .container {
@@ -16,4 +16,12 @@ body {
     top: 0;
     width: 100%; /* Passt sich der Container-Breite an */
     z-index: 1000;
+  }
+
+  // Dekorative Glow-/Schatten-Grafiken und einzelne Bilder ragen bewusst über
+  // die Sektionsbreite hinaus. `clip` auf dem Sektions-Container verhindert, dass
+  // sie bei großen Breiten (≥~1700px) einen horizontalen Scroll erzeugen – ohne
+  // die sticky Navbar (außerhalb dieses Containers) zu beeinträchtigen.
+  .main-container {
+    overflow-x: clip;
   }

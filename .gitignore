@@ -40,3 +40,13 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# SebsBrain repo docs (local AI context, not pushed)
+AGENT.md
+ARCHITECTURE.md
+DECISIONS.md
+ROADMAP.md
+QA_GUIDELINES.md
+SECURITY.md
+DEVSECOPS.md
+KNOWN_ISSUES.md

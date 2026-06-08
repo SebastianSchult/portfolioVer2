@@ -226,9 +226,18 @@ h2 {
   
 
 
-@media screen and (min-width: 1400px) and (max-width: 1545px) {
+@media screen and (min-width: 1400px) and (max-width: 1670px) {
   .skills-bg {
     z-index: 1;
+  }
+
+  // Icon-Block schmaler halten, damit die rechte Text-Spalte (u.a. die lange
+  // Überschrift "Kenntnisse" und "Auf der Suche nach anderen Skills?") nicht
+  // rechts aus dem Viewport läuft. Analog zum 1024–1399-Breakpoint. Bis 1670px,
+  // da das Basis-Layout (4 Spalten, 864px-Icon-Block) erst ab ~1670px ohne
+  // Überlauf passt.
+  .skills-claas-img {
+    width: 580px;
   }
 
   .skills-text-section {
@@ -248,7 +257,10 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
+// Ab 1280px passt das zweispaltige Flex-Row-Layout (Icons links, Text rechts).
+// Darunter (1024–1279) reicht die Breite nicht und der Text lief rechts aus dem
+// Viewport – dieser Bereich nutzt jetzt das gestapelte Spalten-Layout unten.
+@media screen and (min-width: 1280px) and (max-width: 1399px) {
   .skills-class {
     left: 50px;
   }
@@ -282,7 +294,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   #skills {
     flex-direction: column;
   }

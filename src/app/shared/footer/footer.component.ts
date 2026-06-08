@@ -11,6 +11,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  /** Aktuelles Jahr für die Copyright-Zeile, damit es nicht veraltet. */
+  currentYear = new Date().getFullYear();
 
   constructor(public languageService: LanguageService) {}
 

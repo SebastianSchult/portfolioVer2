@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -9,12 +15,21 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+}
+
+// html UND body werden per `overflow-x: clip` horizontal beschnitten. `clip`
+// verhindert den horizontalen Überlauf, OHNE einen Element-Scroll-Container zu
+// erzeugen (anders als `hidden`, das `overflow-y` auf `auto` zwingt). Dadurch
+// scrollt der native Viewport – ein einziger, normaler Seiten-Scroll. Das war
+// die Ursache fürs doppelte Scrollen (sowohl body als auch html wurden zu
+// eigenen Scroll-Containern).
+html,
+body {
+  overflow-x: clip;
 }
 
 html {
   background: #151d2e;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +56,14 @@ html {
 }
 
 .content-wrapper {
-  margin: 0 auto; 
+  margin: 0 auto;
+  // `position: relative` macht den Wrapper zum Containing-Block für die absolut
+  // positionierten Deko-Schatten (die sonst am body hängen und dessen Clip
+  // entkommen). `overflow-x: clip` beschneidet ihren horizontalen Überlauf, der
+  // sonst bei großen Breiten (≥~1700px) einen horizontalen Scroll erzeugt.
+  // Der Wrapper sitzt bündig bei 0,0 wie der body → keine sichtbare Verschiebung.
+  position: relative;
+  overflow-x: clip;
 }
 
 .btn-primary {

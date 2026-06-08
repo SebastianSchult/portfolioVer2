@@ -358,12 +358,36 @@ button[type="submit"] {
   }
 }
 
-@media screen and (max-width: 1200px) {
+// Unterhalb von 1920px die ≥1921-Positionierung neutralisieren: Basis nutzt
+// `margin-left: 25%` + `width: 100%` (+ h2 translate(-50%)), was die Box 25%
+// breiter als den Container macht und die Überschrift samt grüner Linie rechts
+// aus dem Viewport schiebt. Hier stattdessen normal zentrieren.
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .contact-headline {
+    margin-left: 0;
+    width: 100%;
+
+    h2 {
+      transform: none;
+    }
+  }
+}
+
+// Bis 1279px gestapeltes Layout (Row-Layout passt erst ab 1280, wie bei Skills).
+@media screen and (max-width: 1279px) {
   .contact-d-flex {
     flex-direction: column;
   }
   .purple-shadow {
     left: 80%;
+  }
+
+  // Im gestapelten Layout das Formular zentrieren statt per `margin: 0 5% 0 auto`
+  // nach rechts zu schieben (das ließ das innere <form> rechts überlaufen).
+  .contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 

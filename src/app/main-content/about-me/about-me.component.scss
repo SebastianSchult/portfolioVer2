@@ -92,7 +92,10 @@ section {
 
 .about-me-img img:not(.about-me-img1) {
   position: relative;
-  z-index: 2;
+  // Hoher z-index, damit das Foto (die verschränkten Arme) IMMER vor dem
+  // diagonalen Section-Divider (Skills-Hintergrund `.img`, z-index 1) liegt und
+  // bewusst darüber ragt – auf allen Auflösungen.
+  z-index: 5;
   height: 737px;
   max-width: 593px;
 }
@@ -160,8 +163,11 @@ section {
     transform: scale(0.5);
   }
 
+  // Foto (und Schatten) tiefer setzen, damit die verschränkten Arme bewusst
+  // über den diagonalen Section-Divider ragen (Pop-out, wie im Referenzfoto).
+  // Stellschraube: dieser top-Wert – größer = ragt weiter über die Kante.
   .about-me-img img {
-    top: 20px;
+    top: 130px;
   }
 }
 
