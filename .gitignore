@@ -50,3 +50,7 @@ QA_GUIDELINES.md
 SECURITY.md
 DEVSECOPS.md
 KNOWN_ISSUES.md
+REVIEW.md
+
+# Local Claude/agent config
+.claude/

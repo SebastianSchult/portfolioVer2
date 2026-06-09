@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '../../serices/language.service';
+import { LanguageService } from '../../services/language.service';
 
 
 @Component({

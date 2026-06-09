@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageService } from '../../serices/language.service';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-about-me',

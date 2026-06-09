@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { LanguageService } from '../../serices/language.service';
+import { LanguageService } from '../../services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -36,8 +36,6 @@ export class ContactSectionComponent {
 
   isButtonSuccess: boolean = false;
 
-  emailError: string = ''; // Error message for invalid email
-
   post = {
     endPoint: 'https://sebastian-schult-dev.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -60,43 +58,26 @@ export class ContactSectionComponent {
   }
 
   /**
-   * Checks and sets the email error message.
-   */
-  validateEmail() {
-    if (!this.isEmailValid(this.contactData.email)) {
-      this.emailError = 'Invalid email format'; // Anpassbar für Übersetzungen
-    } else {
-      this.emailError = '';
-    }
-  }
-
-  /**
    * Handles the contact form submission.
    * @param ngForm The NgForm instance.
    */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      // Validate email before sending
+      // Validierung vor dem Senden; ungueltige E-Mail bricht ab
       if (!this.isEmailValid(this.contactData.email)) {
-        console.error('Invalid email format:', this.contactData.email);
-        this.emailError = 'Invalid email format'; // Anpassbar für Übersetzungen
         return;
       }
 
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => {
+          next: () => {
             ngForm.resetForm();
             this.isButtonSuccess = true;
             setTimeout(() => {
               this.isButtonSuccess = false;
             }, 2000);
           },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
         });
     }
   }

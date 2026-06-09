@@ -51,7 +51,6 @@
   name="email"
   placeholder="{{ 'YOURMAIL' | translate }}"
   required
-  (ngModelChange)="validateEmail()"
 />
 <span
   *ngIf="!isEmailValid(contactData.email) && email.touched"

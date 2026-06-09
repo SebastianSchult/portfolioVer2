@@ -1,27 +1,43 @@
-# Portfolio2
+# Portfolio – Sebastian Schult
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Persönliche Portfolio-Website unter [sebastian-schult-dev.de](https://sebastian-schult-dev.de).
+Stellt Person, Skills und ausgewählte Projekte vor und bietet ein Kontaktformular.
 
-## Development server
+## Tech-Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular 17** (Standalone Components, Angular CLI 17.3.8)
+- **TypeScript**
+- **SCSS** für Styling, responsive von 360–2560px
+- **ngx-translate** für Mehrsprachigkeit (Deutsch/Englisch)
+- Kontaktformular versendet über `sendMail.php` (Hosting-seitig)
 
-## Code scaffolding
+## Entwicklung
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install
+ng serve        # Dev-Server unter http://localhost:4200/
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng build        # Production-Build nach dist/
+```
 
-## Running unit tests
+## Tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng test         # Unit-Tests via Karma
+```
 
-## Running end-to-end tests
+## Projektstruktur
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `src/app/main-content/` – Sections (Landing, About, Skills, Portfolio, Contact)
+- `src/app/shared/` – Nav-Bar und Footer
+- `src/app/services/` – `LanguageService` (Sprachumschaltung)
+- `src/assets/i18n/` – Übersetzungen (`de.json`, `en.json`)
 
-## Further help
+## Hinweise
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- SEO-Grundlagen (Meta/OG/JSON-LD, `robots.txt`, `sitemap.xml`) sind im `src/`-Head bzw. als statische Assets hinterlegt.
+- Interne AI-native Repo-Dokumentation (AGENT/ARCHITECTURE/DECISIONS/ROADMAP/…) liegt lokal und ist bewusst nicht Teil des öffentlichen Repos (siehe `.gitignore`).
