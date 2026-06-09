@@ -1,16 +1,16 @@
 {
-  "SEO_TITLE": "Sebastian Schult – Frontend Developer | Angular & TypeScript",
-  "SEO_DESCRIPTION": "Portfolio of Sebastian Schult – frontend developer focused on Angular, TypeScript and modern web development. Projects, skills and contact.",
+  "SEO_TITLE": "Sebastian Schult – Software Engineer | React & TypeScript",
+  "SEO_DESCRIPTION": "Portfolio of Sebastian Schult – software engineer focused on React, TypeScript and modern web development. Projects, skills and contact.",
 
   "ABOUTME": "About me",
   "SKILLS": "Skills",
   "PORTFOLIO": "Portfolio",
 
   "I": "I am",
-  "DEVELOPER": "DEVELOPER",
+  "ROLE": "ENGINEER",
   "SCROLL": "Scroll down",
 
-  "ABOUTMEDESCRIPTIONP1": "Hey there! I´m Sebastian, a frontend developer fueled by a passion for crafting user-friendly digital experiences. With a talent for problem-solvin and an eye for detail, I specialize in translating complex ideas into elegant designs.",
+  "ABOUTMEDESCRIPTIONP1": "Hey there! I´m Sebastian, a software engineer fueled by a passion for crafting user-friendly digital experiences. With a talent for problem-solvin and an eye for detail, I specialize in translating complex ideas into elegant designs.",
   "ABOUTMEDESCRIPTIONP2": "Let's connect and create something amazing together!",
   "ABOUTMEDESCRIPTIONSPAN1": "Flexible in terms of working environments, I can work effectively both on-site and remotely.",
   "ABOUTMEDESCRIPTIONSPAN2": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
@@ -31,7 +31,7 @@
   "CONTACT": "Contact",
   "PROBLEM": "Got a problem to solve?",
   "CONTACTTEXTBLOCK": "Contact me through this form. I am interested in hearing from you knowing your ideas and contributing to your projects with my work.",
-  "CONTACTTEXTEND": "Need a Frontend Developer?",
+  "CONTACTTEXTEND": "Need a Software Engineer?",
   "CONTACTTEXTENDCONTACT": "Contact me!",
   "YOURNAME": "Your name...",
   "ENTERNAME": "Please enter a name",
