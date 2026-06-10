@@ -5,11 +5,12 @@ import { SkillsComponent } from "./skills/skills.component";
 import { PortfolioSectionComponent } from "./portfolio-section/portfolio-section.component";
 import { ContactSectionComponent } from "./contact-section/contact-section.component";
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollRevealDirective } from "../shared/scroll-reveal.directive";
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [LandingPageComponent, AboutMeComponent, SkillsComponent, PortfolioSectionComponent, ContactSectionComponent, HttpClientModule],
+  imports: [LandingPageComponent, AboutMeComponent, SkillsComponent, PortfolioSectionComponent, ContactSectionComponent, HttpClientModule, ScrollRevealDirective],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

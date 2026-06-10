@@ -38,6 +38,37 @@ picture {
   display: contents;
 }
 
+// Scroll-Reveal: Sektionen faden beim Scrollen einmalig herein, abwechselnd
+// von links/rechts (siehe ScrollRevealDirective). `.main-container` clippt
+// overflow-x, daher erzeugt die seitliche Bewegung keine Scrollbar.
+.reveal {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal--left {
+  transform: translateX(-60px);
+}
+
+.reveal--right {
+  transform: translateX(60px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
