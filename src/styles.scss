@@ -32,6 +32,12 @@ html {
   background: #151d2e;
 }
 
+// `<picture>`-Wrapper (WebP + Fallback) sollen layout-transparent sein, damit
+// Flex-/Grid-Kinder und absolut positionierte Bilder unveraendert bleiben.
+picture {
+  display: contents;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
