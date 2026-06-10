@@ -28,6 +28,7 @@ export class ContactSectionComponent {
     name: '',
     email: '',
     message: '',
+    website: '', // honeypot — must stay empty
   };
 
   http = inject(HttpClient);

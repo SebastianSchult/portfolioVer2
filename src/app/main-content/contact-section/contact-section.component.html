@@ -23,6 +23,16 @@
 
       <div class="contact-form">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <!-- honeypot: visually hidden, must stay empty -->
+          <input
+            [(ngModel)]="contactData.website"
+            type="text"
+            name="website"
+            autocomplete="off"
+            tabindex="-1"
+            aria-hidden="true"
+            style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"
+          />
           <label for="name"></label>
           <input
             #name="ngModel"
