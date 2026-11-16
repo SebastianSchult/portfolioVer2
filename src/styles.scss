@@ -127,6 +127,24 @@ html {
     background-color: $color-accent-purple-hover;
     cursor: pointer;
   }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-cyan;
+    outline-offset: 2px;
+  }
+}
+
+// Sichtbarer Fokus-Indikator für Tastatur-Navigation (WCAG 2.4.7). Bewusst
+// nur :focus-visible (nicht :focus), damit Maus-/Touch-Klicks weiterhin ohne
+// Ring bleiben, wie es die Browser-Heuristik ohnehin vorsieht.
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid $color-accent-cyan;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 //FONTS
