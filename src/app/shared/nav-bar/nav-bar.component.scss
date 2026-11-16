@@ -116,6 +116,9 @@ nav {
     .nav-box {
       padding: 10px 20px;
     }
+    .logo {
+      font-size: 32px;
+    }
   }
 
   .burger-menu-responsive {
@@ -175,6 +178,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 600px) {
+  nav .logo {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .nav-box {
     padding: 8px !important;
@@ -183,14 +192,14 @@ nav {
   .lang-box {
     padding-left: 20px;
   }
+
+  nav .logo {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 380px) {
-  #nav {
-  .logo {
-    font-size: 24px;
+  nav .logo {
+    font-size: 19px;
   }
-    
-  
-}
 }
