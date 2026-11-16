@@ -1,5 +1,13 @@
 @use "tokens" as *;
 
+// Redesign (Issue #8): rundes Foto mit Ring statt des bisherigen "Pop-out
+// ueber dem diagonalen Divider"-Effekts (DECISIONS.md, Experimental). Die
+// Section-Hoehe bleibt bewusst unveraendert (870px Desktop, "unset" ab
+// 900px wie zuvor) - der diagonale Uebergang kommt aus der Skills-Section
+// (`.img { top: -280px; }` in skills.component.scss) und ist unabhaengig
+// vom About-me-Inhalt. Das kleinere, zentrierte Foto braucht keinen
+// z-index-Trick mehr, da es gar nicht mehr in die Naehe dieser Kante reicht.
+
 section {
   background-color: $color-bg-dark;
   color: white;
@@ -17,27 +25,30 @@ section {
 .about-me {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
   width: 100%;
+  height: 100%;
+  padding: 0 64px;
+  box-sizing: border-box;
 }
 
 .about-me-description {
-  padding: 64px 64px 64px 120px;
   color: white;
-  width: 680px;
-  height: 740px;
-  left: 100px;
+  max-width: 680px;
   text-align: left;
 
   h1 {
     text-align: left;
-    font-size: 90px;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 108px;
+    line-height: 76.8px;
+    margin: 0;
   }
 
   p {
-    padding-top: 64px;
+    padding-top: 32px;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -49,9 +60,9 @@ section {
 .about-me-small-points {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: flex-start;
-  padding-top: 35px;
+  gap: 16px;
+  padding-top: 24px;
 
   font-size: 16px;
   font-weight: 400;
@@ -61,6 +72,7 @@ section {
   img {
     width: 48px;
     height: 48px;
+    flex-shrink: 0;
 
     &:hover {
       cursor: pointer;
@@ -70,333 +82,125 @@ section {
 }
 
 .about-me-img {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  padding-left: 166px;
-  left: 134px;
-  top: 141px;
+  flex-shrink: 0;
 }
 
-.about-me-img1 {
+.about-me-glow {
   position: absolute;
-  top: 42px;
-  left: 108px;
-  width: 834px;
+  z-index: 0;
+  width: 480px;
   height: auto;
-  z-index: 1;
-
-  img {
-    width: 634px;
-  }
+  opacity: 0.9;
+  pointer-events: none;
 }
 
-.about-me-img img:not(.about-me-img1) {
+.about-me-photo {
   position: relative;
-  // Hoher z-index, damit das Foto (die verschränkten Arme) IMMER vor dem
-  // diagonalen Section-Divider (Skills-Hintergrund `.img`, z-index 1) liegt und
-  // bewusst darüber ragt – auf allen Auflösungen.
-  z-index: 5;
-  height: 737px;
-  max-width: 593px;
-}
-
-@media screen and (min-width: 1555px){
-  .about-me-description {
-    padding-top: 32px;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  .about-me-img {
-    left: 240px;
-    padding-left: 32px;
-    padding-right: 4px;
-    top: 107px;
-  }
-
-  .about-me-img1 {
-    left: -68px;
-    width: 857px;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  .about-me-img {
-    left: 69px;
-        padding-left: 32px;
-        padding-right: 4px;
-        top: 133px;
-  }
-
-  .about-me-img1 {
-    left: -68px;
-    width: 857px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1545px) {
-  .about-me-description {
-    padding-top: 90px;
-
-    h1 {
-      font-size: 72px;
-      line-height: 58px;
-    }
-
-    p {
-      padding-top: 36px;
-    }
-  }
-
-  .about-me-img {
-    left: 10px;
-    padding-left: 20px;
-    padding-right: 4px;
-  }
-
-  .about-me-img1 {
-    left: -68px;
-    width: 857px;
-  }
-
-  .about-me-img1 img {
-    transform: scale(0.5);
-  }
-
-  // Foto (und Schatten) tiefer setzen, damit die verschränkten Arme bewusst
-  // über den diagonalen Section-Divider ragen (Pop-out, wie im Referenzfoto).
-  // Stellschraube: dieser top-Wert – größer = ragt weiter über die Kante.
-  .about-me-img img {
-    top: 130px;
-  }
+  z-index: 1;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid $color-accent-green;
 }
 
 @media screen and (max-width: 1400px) {
-  .about-me-description {
-    margin-left: 3%;
-    padding: 2rem 0rem;
-    h1 {
-      font-size: 60px;
-    }
-    p {
-      font-size: 15px;
-    }
+  .about-me {
+    gap: 32px;
   }
 
-  .about-me-img {
-    left: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .about-me-img .about-me-img1 {
-    right: -9.5%;
-    transform: scale(0.7);
-    top: 180px;
+  .about-me-description h1 {
+    font-size: 56px;
+    line-height: 67px;
   }
 
-  .about-me-img img {
-    right: 8px;
-    transform: scale(0.6);
-    top: 180px;
+  .about-me-photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-me-glow {
+    width: 400px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .about-me-description {
-    z-index: 1;
-    width: 340px;
+    max-width: 420px;
+
     h1 {
-      padding: 1rem 0rem;
-      font-size: 90px;
-      margin: 0;
+      font-size: 48px;
+      line-height: 58px;
     }
+
     p {
-      font-size: 14px;
-      padding: 1rem 0rem;
+      font-size: 15px;
     }
   }
-  .about-me-img .about-me-img1 {
-    right: -12%;
+
+  .about-me-photo {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-me-glow {
+    width: 340px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .about-me-section {
-    height: unset;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
+    height: auto;
+    padding: 64px 0;
   }
 
   .about-me {
-    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 100px;
+    gap: 40px;
+    padding: 0 24px;
   }
 
   .about-me-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    bottom: 100px;
-    z-index: 9;
-    position: relative;
-    padding: 3rem 0rem;
-    left: -40px;
-    width: 642px;
+    max-width: 480px;
+    text-align: center;
 
     h1 {
-      font-size: 88px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .about-me-small-points {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-description {
+    h1 {
+      font-size: 36px;
+      line-height: 43px;
     }
 
     p {
       font-size: 14px;
-      line-height: 32.2px;
     }
   }
 
-  .about-me-img {
-    top: -180px;
-    left: -66px;
+  .about-me-photo {
+    width: 180px;
+    height: 180px;
+    border-width: 4px;
   }
 
-  .about-me-img1 {
-    padding-top: 0px;
-    scale: 1.1;
-  }
-
-  .about-me-img1 img {
-    scale: 1.5;
-  }
-
-  .about-me-img2 {
-    padding-top: 80px;
-    scale: 1.5;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .about-me-description {
-    left: 0px;
-
-    h1 {
-      font-size: 45px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 19.2px;
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about-me-description {
-    left: -10px;
-    width: 400px;
-
-    h1 {
-      font-size: 45px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 19.2px;
-    }
-  }
-  .about-me-img1 {
-    padding-top: 0px;
-    scale: 1;
-  }
-
-  .about-me-img1 img {
-    scale: 1.4;
-  }
-
-  .about-me-img2 {
-    padding-top: 80px;
-    scale: 1.4;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .aboutMe {
-    width: 350px;
-    left: 30px;
-    h1 {
-      font-size: 48px;
-    }
-  }
-
-  .about-me-img {
-    top: -180px;
-    left: -36px;
-  }
-
-  .about-me-img1 {
-    padding-top: 0px;
-    scale: 0.8;
-  }
-
-  .about-me-img2 {
-    padding-top: 80px;
-    scale: 1.2;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .aboutMe {
-    bottom: 400px;
-    width: 230px;
-    padding-left: 4px;
-  }
-
-  .about-me-description {
-    left: -10px;
-    width: 360px;
-  }
-
-  .about-me-img {
-    top: -180px;
-    left: -46px;
-  }
-
-  .about-me-img1 {
-    padding-top: 0px;
-    scale: 0.6;
-  }
-
-  .about-me-img2 {
-    padding-top: 80px;
-    scale: 1;
-  }
-}
-@media screen and (max-width: 400px) {
-  .aboutMe {
-    width: 300px;
-  }
-
-  .about-me-img {
-    top: -300px;
-    left: -26px;
-  }
-
-  .about-me-description {
-    margin-top: -220px;
-    left: -10px;
-    padding: 4px;
-    width: 280px;
-  }
-
-  .about-me-img1 {
-    scale: 0.45;
-  }
-
-  .about-me-img2 {
-    padding-top: 80px;
-    scale: 0.85;
+  .about-me-glow {
+    width: 260px;
   }
 }
