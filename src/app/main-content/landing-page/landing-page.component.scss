@@ -90,11 +90,12 @@
   }
 
   h2 {
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 400;
     color: #9747ff;
-    line-height: 76.8px;
+    line-height: 52px;
     z-index: 10;
+    max-width: 900px;
   }
 }
 
@@ -247,8 +248,9 @@
     }
 
     h2 {
-      font-size: 64px;
-      line-height: 36.8px;
+      font-size: 40px;
+      line-height: 46px;
+      max-width: 760px;
     }
   }
 
@@ -268,7 +270,9 @@
     }
 
     h2 {
-      font-size: 56px;
+      font-size: 34px;
+      line-height: 40px;
+      max-width: 620px;
     }
   }
 }
@@ -280,7 +284,9 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 27px;
+      line-height: 32px;
+      max-width: 520px;
     }
   }
 }
@@ -318,8 +324,10 @@
     }
 
     h2 {
-      font-size: 29px;
-      line-height: 14.8px;
+      font-size: 20px;
+      line-height: 25px;
+      max-width: 360px;
+      text-align: center;
     }
   }
 
@@ -358,8 +366,10 @@
     }
 
     h2 {
-      font-size: 24px;
-      line-height: 18px;
+      font-size: 17px;
+      line-height: 21px;
+      max-width: 280px;
+      text-align: center;
     }
   }
 
@@ -381,8 +391,10 @@
     }
 
     h2 {
-      font-size: 24px;
-      line-height: 18px;
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 260px;
+      text-align: center;
     }
   }
 
@@ -415,8 +427,10 @@
     }
 
     h2 {
-      font-size: 18px;
-      line-height: 4px;
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 220px;
+      text-align: center;
     }
   }
 
@@ -439,7 +453,8 @@
 
 @media screen and (max-width: 460px) {
 .titel-box {
-  height: 120px;
+  height: auto;
+  min-height: 120px;
 }
 
   .landingpage-line {
@@ -463,8 +478,10 @@
     }
 
     h2 {
-      font-size: 14px;
-      line-height: 4px;
+      font-size: 12px;
+      line-height: 15px;
+      max-width: 190px;
+      text-align: center;
     }
   }
 }
