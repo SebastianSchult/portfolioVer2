@@ -116,9 +116,6 @@ nav {
     .nav-box {
       padding: 10px 20px;
     }
-    .logo {
-      font-size: 32px;
-    }
   }
 
   .burger-menu-responsive {
@@ -178,12 +175,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
-  nav .logo {
-    font-size: 26px;
-  }
-}
-
 @media screen and (max-width: 430px) {
   .nav-box {
     padding: 8px !important;
@@ -192,7 +183,25 @@ nav {
   .lang-box {
     padding-left: 20px;
   }
+}
 
+// Logo-Schriftgröße gestaffelt verkleinern, um Overflow mit Flaggen/Burger-Icon
+// zu vermeiden (siehe #3/#6). Bewusst als sich gegenseitig ausschließende
+// Bereiche (min-width + max-width) statt kumulativer max-width-Regeln: so
+// hängt das Ergebnis nicht von der Reihenfolge dieser Blöcke im Quelltext ab.
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  nav .logo {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 431px) {
+  nav .logo {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 430px) and (min-width: 381px) {
   nav .logo {
     font-size: 22px;
   }
