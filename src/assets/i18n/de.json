@@ -1,16 +1,16 @@
 {
-  "SEO_TITLE": "Sebastian Schult – Software Engineer | React, Angular & TypeScript",
-  "SEO_DESCRIPTION": "Portfolio von Sebastian Schult – Software Engineer mit Fokus auf React, Angular, TypeScript und moderne Webentwicklung. Projekte, Skills und Kontakt.",
+  "SEO_TITLE": "Sebastian Schult – Solution & Software Engineer | Angular, TypeScript & React",
+  "SEO_DESCRIPTION": "Portfolio von Sebastian Schult – Solution & Software Engineer mit Fokus auf React, Angular, TypeScript und moderne Webentwicklung. Projekte, Skills und Kontakt.",
 
   "ABOUTME": "Über mich",
   "SKILLS": "Kenntnisse",
   "PORTFOLIO": "Portfolio",
 
   "I": "Ich bin",
-  "ROLE": "ENGINEER",
+  "ROLE": "SOLUTION & SOFTWARE ENGINEER",
   "SCROLL": "herunter",
 
-  "ABOUTMEDESCRIPTIONP1": "Hallo! Ich bin Sebastian, ein Software Engineer mit Leidenschaft für Gestaltung benutzerfreundlicher digitaler Erlebnisse. Mit einem Talent für Problemlösungsorientierung und mit einem Auge fürs Detail bin ich spezialisiert auf das realisieren komplexer Ideen in elegante Designs zu verwandeln.",
+  "ABOUTMEDESCRIPTIONP1": "Hallo! Ich bin Sebastian, Solution und Software Engineer. Ich denke Lösungen von der Anforderung bis zum Betrieb zu Ende: Architektur, Integration und saubere Umsetzung gehören für mich zusammen. Mit einem Talent für Problemlösung, einem Auge fürs Detail und zunehmend KI-gestützter Entwicklung verwandle ich komplexe Ideen in elegante, funktionierende Designs.",
   "ABOUTMEDESCRIPTIONP2": "Lass uns zusammen etwas fantastisches erstellen!",
   "ABOUTMEDESCRIPTIONSPAN1": "Flexible in Bezug auf Arbeitsumgebungen, kann ich effektiv sowohl beim Standort als auch Remote arbeiten.",
   "ABOUTMEDESCRIPTIONSPAN2": "Ich bin offen für persönlliche Herausforderungen, um mein Wissen und Fertigkeiten stetig zu verbessern.",
@@ -31,7 +31,7 @@
   "CONTACT": "Kontakt",
   "PROBLEM": "Gibt es ein Problem zu lösen?",
   "CONTACTTEXTBLOCK": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-  "CONTACTTEXTEND": "Benötigen Sie einen Software Engineer?",
+  "CONTACTTEXTEND": "Benötigen Sie einen Solution & Software Engineer?",
   "CONTACTTEXTENDCONTACT": "Nehmen Sie Kontakt auf!",
   "YOURNAME": "Ihr Name...",
   "ENTERNAME": "Bitte Namen eingeben",

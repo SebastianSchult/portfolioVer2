@@ -1,16 +1,16 @@
 {
-  "SEO_TITLE": "Sebastian Schult – Software Engineer | React, Angular & TypeScript",
-  "SEO_DESCRIPTION": "Portfolio of Sebastian Schult – software engineer focused on React, Angular, TypeScript and modern web development. Projects, skills and contact.",
+  "SEO_TITLE": "Sebastian Schult – Solution & Software Engineer | Angular, TypeScript & React",
+  "SEO_DESCRIPTION": "Portfolio of Sebastian Schult – Solution & Software Engineer focused on React, Angular, TypeScript and modern web development. Projects, skills and contact.",
 
   "ABOUTME": "About me",
   "SKILLS": "Skills",
   "PORTFOLIO": "Portfolio",
 
   "I": "I am",
-  "ROLE": "ENGINEER",
+  "ROLE": "SOLUTION & SOFTWARE ENGINEER",
   "SCROLL": "Scroll down",
 
-  "ABOUTMEDESCRIPTIONP1": "Hey there! I´m Sebastian, a software engineer fueled by a passion for crafting user-friendly digital experiences. With a talent for problem-solvin and an eye for detail, I specialize in translating complex ideas into elegant designs.",
+  "ABOUTMEDESCRIPTIONP1": "Hi there! I'm Sebastian, a Solution & Software Engineer. I think solutions through end to end, from requirements to architecture to operations, not just the code in between. With a talent for problem-solving, an eye for detail, and a growing focus on AI-assisted development, I turn complex ideas into elegant, working designs.",
   "ABOUTMEDESCRIPTIONP2": "Let's connect and create something amazing together!",
   "ABOUTMEDESCRIPTIONSPAN1": "Flexible in terms of working environments, I can work effectively both on-site and remotely.",
   "ABOUTMEDESCRIPTIONSPAN2": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
@@ -31,7 +31,7 @@
   "CONTACT": "Contact",
   "PROBLEM": "Got a problem to solve?",
   "CONTACTTEXTBLOCK": "Contact me through this form. I am interested in hearing from you knowing your ideas and contributing to your projects with my work.",
-  "CONTACTTEXTEND": "Need a Software Engineer?",
+  "CONTACTTEXTEND": "Need a Solution & Software Engineer?",
   "CONTACTTEXTENDCONTACT": "Contact me!",
   "YOURNAME": "Your name...",
   "ENTERNAME": "Please enter a name",
