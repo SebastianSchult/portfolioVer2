@@ -1,5 +1,7 @@
+@use "tokens" as *;
+
 .contact-section {
-  background-color: #141d2f;
+  background-color: $color-bg-dark-alt;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -44,7 +46,7 @@
 .contact-line {
   width: 600px;
   height: 4px;
-  background-color: #70e61c;
+  background-color: $color-accent-green;
   border-radius: 10px 0px 0px 10px;
   position: relative;
 
@@ -74,7 +76,7 @@
   bottom: 630px;
   height: 4px;
   border-radius: 0 10px 10px 0;
-  background-color: #1cdae6;
+  background-color: $color-accent-cyan;
   left: 0;
   z-index: 8;
   @media screen and (min-width: 1921px) {
@@ -140,11 +142,11 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #9747ff;
+  border: 1px solid $color-accent-purple;
   border-radius: 10px;
   box-sizing: border-box;
   resize: vertical;
-  background-color: #141d2f;
+  background-color: $color-bg-dark-alt;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -163,11 +165,11 @@ input[type="text"]:hover,
 [type="email"]:hover,
 select:hover,
 textarea:hover {
-  border: 1px solid #1cdae6;
+  border: 1px solid $color-accent-cyan;
 }
 
 button[type="submit"] {
-  background-color: #b6b6b6;
+  background-color: $color-disabled;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -183,18 +185,18 @@ button[type="submit"] {
     height 100ms ease-in-out;
 
   &.valid {
-    background-color: #70e61c;
+    background-color: $color-accent-green;
     color: white;
   }
 
   &.valid:hover {
-    background-color: #9747ff;
+    background-color: $color-accent-purple;
     width: 290px;
     height: 68px;
   }
 
   &.success {
-    background-color: #9747ff;
+    background-color: $color-accent-purple;
     color: white;
   }
 }
@@ -217,7 +219,7 @@ button[type="submit"] {
   text-wrap: nowrap;
   a {
     text-decoration: none;
-    color: #9747ff;
+    color: $color-accent-purple;
     cursor: pointer;
   }
 }
@@ -250,7 +252,7 @@ button[type="submit"] {
   height: 18px;
   width: 18px;
   background-color: transparent;
-  border: 2px solid #70e61c;
+  border: 2px solid $color-accent-green;
   border-radius: 5px;
 }
 
@@ -273,7 +275,7 @@ button[type="submit"] {
   bottom: 2px;
   width: 4px;
   height: 10px;
-  border: solid #70e61c;
+  border: solid $color-accent-green;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -286,12 +288,12 @@ button[type="submit"] {
   transform: translate(-50%, 50%) rotate(45deg);
   width: 6px; /* Passe die Breite an */
   height: 12px; /* Passe die Höhe an */
-  border: solid #70e61c;
+  border: solid $color-accent-green;
   border-width: 0 3px 3px 0;
 }
 
 .error-text {
-  color: #e61c40;
+  color: $color-error;
   position: relative;
   bottom: 20px;
   font-weight: 400;

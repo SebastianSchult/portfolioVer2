@@ -1,3 +1,5 @@
+@use "tokens" as *;
+
 #landing-page {
   min-height: clamp(50vh, 100vh, 100vh);
   display: flex;
@@ -18,7 +20,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #151d2e;
+  background-color: $color-bg-dark;
   background-size: cover;
   width: 100%;
   color: white;
@@ -92,7 +94,7 @@
   h2 {
     font-size: 44px;
     font-weight: 400;
-    color: #9747ff;
+    color: $color-accent-purple;
     line-height: 52px;
     z-index: 10;
     max-width: 900px;
@@ -145,7 +147,7 @@
   display: block;
   width: 300px;
   border: 4px;
-  border-top: 4px solid #70e61c;
+  border-top: 4px solid $color-accent-green;
   padding: 0;
 
   @media screen and (min-width: 1921px) {

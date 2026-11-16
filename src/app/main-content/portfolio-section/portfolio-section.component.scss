@@ -1,6 +1,8 @@
+@use "tokens" as *;
+
 .portfolio-section {
   padding-top: 600px;
-  background-color: #141d2f;
+  background-color: $color-bg-dark-alt;
   display: flex;
   justify-content: center;
   max-width: 1920px;
@@ -60,7 +62,7 @@
   width: 68px;
   height: 4px;
   border-radius: 0 10px 10px 0;
-  background-color: #9747ff;
+  background-color: $color-accent-purple;
   padding: 0;
   box-sizing: border-box;
 
@@ -102,7 +104,7 @@
     padding: 15px 30px;
     border: solid 1px;
     border-radius: 10px;
-    border-color: #1cdae6;
+    border-color: $color-accent-cyan;
     transition: background-color 100ms ease-in-out;
   }
 }
@@ -118,17 +120,17 @@
     padding: 15px 30px;
     border: solid 1px;
     border-radius: 10px;
-    border-color: #1cdae6;
+    border-color: $color-accent-cyan;
     transition: background-color 100ms ease-in-out;
   }
 }
 
 .project-btn-git:hover a {
-  background-color: #1cdae6;
+  background-color: $color-accent-cyan;
 }
 
 .project-btn-live:hover a {
-  background-color: #1cdae6;
+  background-color: $color-accent-cyan;
 }
 
 .project-img {
@@ -136,9 +138,9 @@
   height: 603px;
   border: 1px solid;
   border-radius: 15px;
-  border-color: #70e61c;
+  border-color: $color-accent-green;
   overflow: hidden;
-  background-color: #141d2f;
+  background-color: $color-bg-dark-alt;
   cursor: pointer;
 }
 
@@ -147,7 +149,7 @@
   width: 603px;
   height: 350px;
   border-radius: 30px 30px 15px 15px;
-  background-color: #ffffff;
+  background-color: $color-white;
   position: absolute;
   top: 254px;
 }
@@ -179,7 +181,7 @@
   align-items: center;
   text-align: center;
   h3 {
-    color: #9747ff;
+    color: $color-accent-purple;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
@@ -193,7 +195,7 @@
     margin-top: 27px;
   }
   p {
-    color: #70e61c;
+    color: $color-accent-green;
     font-weight: 400;
     font-size: 23px;
     line-height: 27px;
@@ -427,14 +429,14 @@
   .project-btn-live a {
     width: auto;
     text-align: center;
-    background-color: #1cdae6;
+    background-color: $color-accent-cyan;
     color: white;
     border: none;
   }
 
   .project-btn-git a:hover,
   .project-btn-live a:hover {
-    background-color: #70e61c;
+    background-color: $color-accent-green;
   }
 
   #portfolio-section {

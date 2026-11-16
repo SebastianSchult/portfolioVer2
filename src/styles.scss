@@ -1,3 +1,5 @@
+@use "tokens" as *;
+
 *,
 *::before,
 *::after {
@@ -29,7 +31,7 @@ body {
 }
 
 html {
-  background: #151d2e;
+  background: $color-bg-dark;
 }
 
 // `<picture>`-Wrapper (WebP + Fallback) sollen layout-transparent sein, damit
@@ -74,21 +76,21 @@ picture {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1cdae6;
+  background: $color-accent-cyan;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9747ff;
+  background: $color-accent-purple;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6c35b8;
+  background: $color-accent-purple-dark;
 }
 
 html {
-  scrollbar-color: #9747ff #1cdae6;
+  scrollbar-color: $color-accent-purple $color-accent-cyan;
   scrollbar-width: thin;
 }
 
@@ -115,14 +117,14 @@ html {
   outline: none;
   border-radius: 10px;
   border: 1px solid black;
-  background-color: #60c518;
+  background-color: $color-accent-green-alt;
   color: white;
   font-size: 16.5px;
   font-weight: 500;
   line-height: 27.6px;
 
   &:hover {
-    background-color: #9447fb;
+    background-color: $color-accent-purple-hover;
     cursor: pointer;
   }
 }

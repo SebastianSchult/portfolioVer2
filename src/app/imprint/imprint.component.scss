@@ -1,5 +1,7 @@
+@use "tokens" as *;
+
 .imprint-overlay {
-  background-color: #141d2f;
+  background-color: $color-bg-dark-alt;
   color: white;
   display: flex;
   justify-content: center;
