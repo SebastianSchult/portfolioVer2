@@ -1,5 +1,7 @@
+@use "tokens" as *;
+
 section {
-  background-color: #151d2e;
+  background-color: $color-bg-dark;
   color: white;
   background-size: cover;
   box-sizing: border-box;

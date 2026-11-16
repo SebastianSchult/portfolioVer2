@@ -1,0 +1,28 @@
+// Design-Tokens: zentrale Farbwerte, bisher über alle Komponenten verteilt
+// hartkodiert. Werte unverändert übernommen (reine Zentralisierung, siehe
+// Issue #5) — keine Farbe wurde hier neu gewählt oder angepasst.
+//
+// Bekannte Near-Duplikate bewusst NICHT vereinheitlicht, um den bestehenden
+// visuellen Zustand exakt zu erhalten: $color-bg-dark/$color-bg-dark-alt
+// unterscheiden sich um 1 RGB-Einheit, $color-accent-green/-green-alt und
+// $color-accent-purple/-purple-hover/-purple-dark ähneln sich ebenfalls.
+// Ob das beabsichtigte Varianten oder Tippfehler-Drift sind, ist eine
+// Design-Entscheidung, keine Zentralisierungs-Aufgabe.
+
+// Hintergrundfarben
+$color-bg-dark: #151d2e; // Hero, Über-mich, Navbar
+$color-bg-dark-alt: #141d2f; // Kontakt, Portfolio, Footer, Impressum-Overlay
+
+// Akzentfarben
+$color-accent-green: #70e61c; // Primärakzent: Buttons, Linien, Hover-Zustände
+$color-accent-green-alt: #60c518; // nur globaler .btn-primary Default-Hintergrund
+$color-accent-purple: #9747ff; // Sekundärakzent: Rollentext, Rahmen, Scrollbar
+$color-accent-purple-hover: #9447fb; // nur globaler .btn-primary Hover
+$color-accent-purple-dark: #6c35b8; // nur Scrollbar-Thumb Hover
+$color-accent-cyan: #1cdae6; // Hover-Zustände (Buttons), Scrollbar-Track
+$color-accent-violet: #8a2be2; // Logo-Punkt-Dekoration (Navbar/Footer)
+
+// Status
+$color-error: #e61c40;
+$color-disabled: #b6b6b6;
+$color-white: #ffffff; // Hover-Reveal-Panel-Hintergrund (Portfolio)
