@@ -54,3 +54,9 @@ REVIEW.md
 
 # Local Claude/agent config
 .claude/
+
+# Statische Kunden-Entwürfe, nur per FTP hochladen
+server-upload/
+
+# Lokale Arbeitsauftrags-Prompts (wie SebsBrain-Docs: nicht öffentlich)
+prompts/
