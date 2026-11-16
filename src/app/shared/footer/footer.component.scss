@@ -87,6 +87,8 @@ footer {
   color: white;
   font-weight: 400;
   text-decoration: none;
+  // .footer-content-text ist jetzt flex-wrap: wrap - verhindert, dass der
+  // Copyright-Text selbst mitten im Jahr umbricht, wenn der Platz knapp wird.
   white-space: nowrap;
 }
 
