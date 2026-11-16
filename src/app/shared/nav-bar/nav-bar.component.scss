@@ -128,6 +128,10 @@ nav {
   .openBurger {
     cursor: pointer;
     z-index: 99999;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
   }
 
   .overlay {

@@ -9,6 +9,9 @@
   "I": "I am",
   "HERO_ROLE": "SOLUTION & SOFTWARE ENGINEER",
   "SCROLL": "Scroll down",
+  "OPENMENU": "Open menu",
+  "CLOSEMENU": "Close menu",
+  "MOBILENAV": "Navigation menu",
 
   "ABOUTMEDESCRIPTIONP1": "Hi there! I'm Sebastian, a Solution & Software Engineer. I think solutions through end to end, from requirements to architecture to operations, not just the code in between. With a talent for problem-solving, an eye for detail, and a growing focus on AI-assisted development, I turn complex ideas into elegant, working designs.",
   "ABOUTMEDESCRIPTIONP2": "Let's connect and create something amazing together!",

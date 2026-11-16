@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
 
@@ -24,7 +24,14 @@ export class NavBarComponent {
   
   closeResponsiveMenu(){
     this.showResponsiveMenu = false;
-  
+
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscapeKey() {
+    if (this.showResponsiveMenu) {
+      this.closeResponsiveMenu();
+    }
   }
 
   changeLanguage(language: string) {
