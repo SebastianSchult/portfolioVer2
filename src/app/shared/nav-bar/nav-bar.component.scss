@@ -93,6 +93,14 @@ nav {
   align-items: center;
   gap: 16px;
 
+  .lang-btn {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
   .lang-img {
     height: 20px;
     width: 30px;

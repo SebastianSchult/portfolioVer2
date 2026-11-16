@@ -13,27 +13,28 @@
       <a href="#portfolio-section" class="navbar-link">Portfolio</a>
 
       <div class="lang-box">
-        <img
-          class="lang-img"
-          
-          src=""
-          alt="english"
-          src="assets/img/language/flag_great_britain.png"
+        <button
+          type="button"
+          class="lang-btn"
+          [attr.aria-label]="'SWITCH_TO_EN' | translate"
           (click)="changeLanguage('en')"
-        />
-        <img
-          class="lang-img"
-          
-          src=""
-          alt="german"
-          src="assets/img/language/flag_germany.webp"
+        >
+          <img class="lang-img" src="assets/img/language/flag_great_britain.png" alt="" />
+        </button>
+        <button
+          type="button"
+          class="lang-btn"
+          [attr.aria-label]="'SWITCH_TO_DE' | translate"
           (click)="changeLanguage('de')"
-        />
+        >
+          <img class="lang-img" src="assets/img/language/flag_germany.webp" alt="" />
+        </button>
       </div>
     </div>
 
     <div class="burger-menu-responsive">
       <button
+        #burgerBtn
         type="button"
         class="openBurger"
         (click)="openResponsiveMenu()"
@@ -52,7 +53,7 @@
     [attr.aria-label]="'MOBILENAV' | translate"
   >
     <div class="burger-con">
-      <a href="#about-me" (click)="closeResponsiveMenu()">About me</a>
+      <a #firstMenuLink href="#about-me" (click)="closeResponsiveMenu()">About me</a>
       <a href="#skills-headliner" (click)="closeResponsiveMenu()">Skills</a>
       <a href="#portfolio-section" (click)="closeResponsiveMenu()">Portfolio</a>
       <a href="#contact" (click)="closeResponsiveMenu()">Contact</a>
