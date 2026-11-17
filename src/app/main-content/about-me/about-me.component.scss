@@ -90,7 +90,7 @@ section {
   top: 141px;
 }
 
-.about-me-img1 {
+.about-me-img-shadow {
   position: absolute;
   top: 42px;
   left: 108px;
@@ -103,7 +103,7 @@ section {
   }
 }
 
-.about-me-img img:not(.about-me-img1) {
+.about-me-img img:not(.about-me-img-shadow) {
   position: relative;
   // Hoher z-index, damit das Foto (die verschränkten Arme) IMMER vor dem
   // diagonalen Section-Divider (Skills-Hintergrund `.img`, z-index 1) liegt und
@@ -127,7 +127,7 @@ section {
     top: 107px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     left: -68px;
     width: 857px;
   }
@@ -141,7 +141,7 @@ section {
         top: 133px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     left: -68px;
     width: 857px;
   }
@@ -167,12 +167,12 @@ section {
     padding-right: 4px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     left: -68px;
     width: 857px;
   }
 
-  .about-me-img1 img {
+  .about-me-img-shadow img {
     transform: scale(0.5);
   }
 
@@ -201,7 +201,7 @@ section {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .about-me-img .about-me-img1 {
+  .about-me-img .about-me-img-shadow {
     right: -9.5%;
     transform: scale(0.7);
     top: 180px;
@@ -228,7 +228,7 @@ section {
       padding: 1rem 0rem;
     }
   }
-  .about-me-img .about-me-img1 {
+  .about-me-img .about-me-img-shadow {
     right: -12%;
   }
 }
@@ -274,16 +274,16 @@ section {
     left: -66px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     padding-top: 0px;
     scale: 1.1;
   }
 
-  .about-me-img1 img {
+  .about-me-img-shadow img {
     scale: 1.5;
   }
 
-  .about-me-img2 {
+  .about-me-img-photo {
     padding-top: 80px;
     scale: 1.5;
   }
@@ -318,16 +318,16 @@ section {
       line-height: 19.2px;
     }
   }
-  .about-me-img1 {
+  .about-me-img-shadow {
     padding-top: 0px;
     scale: 1;
   }
 
-  .about-me-img1 img {
+  .about-me-img-shadow img {
     scale: 1.4;
   }
 
-  .about-me-img2 {
+  .about-me-img-photo {
     padding-top: 80px;
     scale: 1.4;
   }
@@ -347,12 +347,12 @@ section {
     left: -36px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     padding-top: 0px;
     scale: 0.8;
   }
 
-  .about-me-img2 {
+  .about-me-img-photo {
     padding-top: 80px;
     scale: 1.2;
   }
@@ -375,12 +375,12 @@ section {
     left: -46px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     padding-top: 0px;
     scale: 0.6;
   }
 
-  .about-me-img2 {
+  .about-me-img-photo {
     padding-top: 80px;
     scale: 1;
   }
@@ -402,11 +402,11 @@ section {
     width: 280px;
   }
 
-  .about-me-img1 {
+  .about-me-img-shadow {
     scale: 0.45;
   }
 
-  .about-me-img2 {
+  .about-me-img-photo {
     padding-top: 80px;
     scale: 0.85;
   }
