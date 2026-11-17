@@ -2,7 +2,9 @@
 
 .portfolio-section {
   // Greift nur ab 1400px (alles darunter wird durch die min-width:1024/
-  // max-width:1023-Breakpoints weiter unten bereits abgedeckt).
+  // max-width:1023- und max-width:900-Breakpoints weiter unten bereits
+  // abgedeckt). Wert visuell gegen die 380px-Stufe (1024-1399px) geprüft
+  // bei 1300/1400/1440/1920px, siehe PR-Beschreibung.
   padding-top: 140px;
   background-color: $color-bg-dark-alt;
   display: flex;
