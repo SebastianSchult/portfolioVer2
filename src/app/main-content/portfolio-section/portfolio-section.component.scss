@@ -1,7 +1,9 @@
 @use "tokens" as *;
 
 .portfolio-section {
-  padding-top: 600px;
+  // Greift nur ab 1400px (alles darunter wird durch die min-width:1024/
+  // max-width:1023-Breakpoints weiter unten bereits abgedeckt).
+  padding-top: 140px;
   background-color: $color-bg-dark-alt;
   display: flex;
   justify-content: center;
