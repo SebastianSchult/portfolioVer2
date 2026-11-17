@@ -24,24 +24,24 @@
           <img [src]="skill.src" alt="" />
           <p class="skill-description">{{ skill.description }}</p>
         </div>
-      </div>
-      <div
-        class="continous"
-        (mouseenter)="onHoverContinous()"
-        (mouseleave)="onLeaveContinous()"
-      >
-        <img
-          *ngIf="!isHoveringContinous"
-          src="assets/img/skills/14. Icons.svg"
-          alt=""
-        />
-        <img
-          *ngIf="isHoveringContinous"
-          src="assets/img/skills/Property 1=Group 19.png"
-          class="continous-img2"
-          alt=""
-        />
-        <p class="skill-description">Continually learning</p>
+        <div
+          class="skill-item continous"
+          (mouseenter)="onHoverContinous()"
+          (mouseleave)="onLeaveContinous()"
+        >
+          <img
+            *ngIf="!isHoveringContinous"
+            src="assets/img/skills/14. Icons.svg"
+            alt=""
+          />
+          <img
+            *ngIf="isHoveringContinous"
+            src="assets/img/skills/Property 1=Group 19.png"
+            class="continous-img2"
+            alt=""
+          />
+          <p class="skill-description">Continually learning</p>
+        </div>
       </div>
     </div>
 
